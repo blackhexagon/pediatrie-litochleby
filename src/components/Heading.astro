@@ -1,0 +1,22 @@
+---
+import { Size } from "../types";
+
+interface Props {
+  size?: Size;
+  as?: string;
+}
+
+const { size = Size.MD, as: Element = "h1" } = Astro.props;
+
+const map = {
+  [Size.XS]: "text-lg",
+  [Size.SM]: "text-xl",
+  [Size.MD]: "text-2xl",
+  [Size.LG]: "text-3xl",
+  [Size.XL]: "text-4xl",
+};
+---
+
+<Element class:list={["font-serif", "font-bold", map[size]]}>
+  <slot />
+</Element>

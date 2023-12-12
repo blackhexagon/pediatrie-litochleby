@@ -1,51 +1,79 @@
 ---
+import config from "../../config";
 interface Props {
-	title: string;
+  title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="auuthor" content="Matouš Trča" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header
+      class="flex items-center justify-between gap-8 container mx-auto px-4 py-8 overflow-hidden"
+    >
+      <strong class="uppercase font-bold">{config.title}</strong>
+      <nav class="flex">
+        <label
+          for="hamburger"
+          class="cursor-pointer uppercase font-bold tracking-wide lg:hidden relative z-20"
+        >
+          Menu
+        </label>
+        <input class="peer sr-only" type="checkbox" id="hamburger" />
+        <ul
+          class:list={[
+            "flex gap-8 transition-transform items-center justify-center",
+            "absolute top-0 right-full w-screen h-screen peer-checked:translate-x-full bg-amber-50 z-10 flex-col",
+            "lg:!static lg:w-auto lg:h-auto lg:flex-row lg:bg-transparent",
+          ]}
+        >
+          {
+            config.links.map((link) => (
+              <li>
+                <a
+                  href={link.path}
+                  class="uppercase py-8 text-orange-950 font-bold"
+                >
+                  {link.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer></footer>
+  </body>
 </html>
+
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  @font-face {
+    font-family: "Peach";
+    src: url("/fonts/PeachiRegular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Peach";
+    src: url("/fonts/PeachiBold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
 </style>
