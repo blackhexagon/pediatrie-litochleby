@@ -1,41 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Heading from "../components/Heading.astro";
 import { Size } from "../types";
+import { Image } from "astro:assets";
+import heroImage from "../images/hero.webp";
+import config from "../../config";
 ---
 
-<Layout title="Welcome to Astro." description="lorem">
-  <Heading size={Size.XL}>Společně na cestě za zdravím vašich dětí</Heading>
-  <p>
-    Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
-    Konopáskové nacházející se na Poliklinice Litochleby na pražském Chodově.
-    Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech
-    MUDr. Marcelou Machynkovou, jejíž pokračovatkou je atestované lékařka s
-    dlouholetouetou praxí v ambulantní a nemocniční pediatrii MUDr. Kateřina
-    Rieger Konopásková. Nabízíme komplexní péči o pacienty od narození až do
-    dospělosti,
-  </p>
-  <ul class="link-card-grid">
-    <Card
-      href="https://docs.astro.build/"
-      title="Documentation"
-      body="Learn how Astro works and explore the official API docs."
-    />
-    <Card
-      href="https://astro.build/integrations/"
-      title="Integrations"
-      body="Supercharge your project with new frameworks and libraries."
-    />
-    <Card
-      href="https://astro.build/themes/"
-      title="Themes"
-      body="Explore a galaxy of community-built starter themes."
-    />
-    <Card
-      href="https://astro.build/chat/"
-      title="Community"
-      body="Come say hi to our amazing Discord community. ❤️"
-    />
-  </ul>
+<Layout title={config.title} description={config.description}>
+  <section class="py-16">
+    <div class="container grid grid-cols-2 gap-8 mx-auto items-center">
+      <article class="space-y-12 max-w-prose text-violet-950">
+        <Heading size={Size.XL}>
+          Společně na cestě za zdravím vašich dětí
+        </Heading>
+        <p class="text-orange-950 leading-loose">
+          {config.description}
+        </p>
+        <a
+          href="#"
+          class="inline-flex bg-amber-400 text-purple-950 font-bold text-lg rounded-full py-4 px-10"
+        >
+          Kontaktujte nás
+        </a>
+      </article>
+      <Image src={heroImage} alt="Roztomilá holčička" />
+    </div>
+  </section>
+  <section class="bg-gray-50">
+    <article
+      class="-translate-y-12 shadow-2xl shadow-gray-200 max-w-3xl mx-auto p-12 rounded-3xl bg-gray-50 text-center text-purple-950"
+    >
+      <Heading size={Size.SM} as="p">
+        Soucitnou péči a osobním přístupem se snažíme zajistit, aby každá
+        návštěva byla co nejpříjemnější a nejužitečnější pro celou rodinu.
+      </Heading>
+    </article>
+  </section>
 </Layout>
