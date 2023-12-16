@@ -1,5 +1,14 @@
 export default {
   title: "Pediatrie Litochleby",
+  phone: "+420 272 919 633",
+  email: "pediatrie.litochleby@gmail.com",
+  openingHours: [
+    ["pondělí", "8:00 - 10:00"],
+    ["úterý", "14:00 - 16:00"],
+    ["středa", "8:00 - 10:00"],
+    ["čtvrtek", "14:00 - 16:00"],
+    ["pátek", "8:00 - 10:00"],
+  ],
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
     Konopáskové nacházející se na Poliklinice Litochleby na pražském Chodově.

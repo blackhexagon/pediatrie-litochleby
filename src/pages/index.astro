@@ -4,37 +4,112 @@ import Heading from "../components/Heading.astro";
 import { Size } from "../types";
 import { Image } from "astro:assets";
 import heroImage from "../images/hero.webp";
+import doctorImage from "../images/katerina.webp";
 import config from "../../config";
+import Button from "../components/Button.astro";
+import Feature from "../components/Feature.astro";
 ---
 
 <Layout title={config.title} description={config.description}>
-  <section class="py-16">
-    <div class="container grid grid-cols-2 gap-8 mx-auto items-center">
-      <article class="space-y-12 max-w-prose text-violet-950">
-        <Heading size={Size.XL}>
-          Společně na cestě za zdravím vašich dětí
-        </Heading>
-        <p class="text-orange-950 leading-loose">
-          {config.description}
-        </p>
-        <a
-          href="#"
-          class="inline-flex bg-amber-400 text-purple-950 font-bold text-lg rounded-full py-4 px-10 hover:bg-amber-300 focus:bg-amber-300 transition-all"
-        >
-          Kontaktujte nás
-        </a>
-      </article>
-      <Image src={heroImage} alt="Roztomilá holčička" />
+  <section class="pt-8 lg:pt-16 pb-24">
+    <div
+      class:list={[
+        "container flex flex-col md:grid grid-cols-2 gap-8",
+        "grid-rows-[min-content_min-content_min-content]",
+        "md:first-child:self-end",
+        "last-child:col-start-1",
+        "last-child:self-start",
+        "last-child:justify-self-start",
+        "penultimate-child:col-start-1",
+        "second-child:col-start-2",
+        "second-child:self-center",
+        "second-child:row-span-full",
+      ]}
+    >
+      <Heading size={Size.XL}>Společně na cestě za zdravím vašich dětí</Heading>
+      <figure>
+        <Image src={heroImage} alt="Roztomilá holčička" />
+      </figure>
+      <p class="text-orange-950 leading-loose">
+        {config.description}
+      </p>
+      <Button href="#">Kontaktujte nás</Button>
     </div>
   </section>
-  <section class="bg-gray-50">
+  <section class="bg-gray-50 px-12 space-y-12">
     <article
-      class="-translate-y-12 shadow-2xl shadow-gray-200 max-w-3xl mx-auto p-12 rounded-3xl bg-gray-50 text-center text-purple-950"
+      class="-translate-y-12 shadow-2xl shadow-gray-200 max-w-3xl mx-auto p-12 rounded-3xl bg-white text-center text-purple-950"
     >
       <Heading size={Size.SM} as="p">
+        Aktuálně registrujeme nové pacienty
+      </Heading>
+    </article>
+    <article class="max-w-3xl mx-auto text-center">
+      <Heading size={Size.LG}>
         Soucitnou péči a osobním přístupem se snažíme zajistit, aby každá
         návštěva byla co nejpříjemnější a nejužitečnější pro celou rodinu.
       </Heading>
     </article>
+  </section>
+  <section class="bg-gray-50 py-16 md:py-24">
+    <ul class="container grid grid-cols-1 md:grid-cols-3 gap-12">
+      <li>
+        <Feature title="Zkušený team">
+          Lékařka v ordinaci <strong>MUDr. Kateřina Rieger Konopásková</strong>
+           se sestřičkou
+          <strong>Zorou Pospíchlovou</strong>
+        </Feature>
+      </li>
+      <li>
+        <Feature title="Spolupráce">
+          Spolupracujeme s s klinikou dětí a dorostu <strong
+            >VFN Ke Karlovu 2</strong
+          >, <strong>FN Královské Vinohrady</strong> , <strong>FTN Krč</strong>,
+
+
+          <strong>FN Motol</strong> a ostatními vybranými odb. pracovišti
+        </Feature>
+      </li>
+      <li>
+        <Feature title="Objednání">
+          Možnost objednání na čas <strong>mimo ordinační hodiny</strong> v
+          rámci nadstandardu
+        </Feature>
+      </li>
+    </ul>
+  </section>
+  <section
+    class="py-24 bg-amber-400 text-purple-950 first-child:text-center space-y-8"
+  >
+    <Heading size={Size.LG}>Náš tým</Heading>
+    <div
+      class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 text-center"
+    >
+      <article class="flex flex-col items-center gap-2">
+        <Image
+          src={doctorImage}
+          class="max-w-xs"
+          alt="Kateřina Rieger Konpásková"
+        />
+        <h3 class="font-bold text-xl mt-auto">
+          MUDr. Kateřina Rieger Konopásková
+        </h3>
+        <p>doktorka</p>
+      </article>
+      <article class="flex flex-col items-center gap-2">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full text-white"
+        >
+          <path
+            fill="currentColor"
+            d="M48.8,-46.2C65.4,-32.3,82.3,-16.1,83.5,1.2C84.7,18.6,70.2,37.1,53.7,47.7C37.1,58.3,18.6,61,-1.9,62.9C-22.3,64.7,-44.7,65.9,-56,55.3C-67.4,44.7,-67.9,22.3,-62.4,5.5C-57,-11.4,-45.5,-22.8,-34.1,-36.7C-22.8,-50.6,-11.4,-67.1,2.4,-69.5C16.1,-71.9,32.3,-60.1,48.8,-46.2Z"
+            transform="translate(100 100) scale(1.15)"></path>
+        </svg>
+        <h3 class="font-bold text-xl mt-auto">Zora Pospíchalová</h3>
+        <p>sestra</p>
+      </article>
+    </div>
   </section>
 </Layout>

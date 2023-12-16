@@ -1,0 +1,18 @@
+---
+import Heading from "./Heading.astro";
+import { Size } from "../types";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<article class="space-y-4 rounded-2xl p-8 bg-white shadow-xl h-full">
+  <Heading size={Size.SM}>
+    {title}
+  </Heading>
+  <p>
+    <slot />
+  </p>
+</article>
