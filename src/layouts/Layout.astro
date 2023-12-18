@@ -1,5 +1,10 @@
 ---
 import config from "../../config";
+import logoOZP from "../images/logo_ozp.svg";
+import logoMZV from "../images/logo_mzv.svg";
+import logoVZP from "../images/logo_vzp.png";
+import logoVOJ from "../images/logo_voj.png";
+import { Image } from "astro:assets";
 interface Props {
   title: string;
   description: string;
@@ -82,7 +87,9 @@ const { title, description } = Astro.props;
       <slot />
     </main>
     <footer class="bg-purple-950 text-white py-8">
-      <div class="container flex justify-between">
+      <div
+        class="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+      >
         <address class="not-italic max-w-sm space-y-2">
           <p>
             Naše ordinace Pediatrie Litochleby se nachází Poliklinice Litochleby
@@ -100,6 +107,29 @@ const { title, description } = Astro.props;
             >{config.email}</a
           >
         </address>
+        <figure class="flex flex-col content-start gap-3">
+          <figcaption class="font-bold w-full">Pojišťovny</figcaption>
+          <Image
+            src={logoVZP}
+            alt="Logo VZP"
+            class="h-8 w-24 object-contain object-left"
+          />
+          <Image
+            src={logoVOJ}
+            alt="Logo VOJ"
+            class="h-8 w-24 object-contain object-left"
+          />
+          <Image
+            src={logoOZP}
+            alt="Logo OZP"
+            class="h-8 w-24 object-contain object-left"
+          />
+          <Image
+            src={logoMZV}
+            alt="Logo MZV"
+            class="h-8 w-24 object-contain object-left"
+          />
+        </figure>
         <article class="space-y-2">
           <strong> Ordinační hodiny pro nemocné</strong>
           <ul>
