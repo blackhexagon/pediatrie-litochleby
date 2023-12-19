@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import { Size } from "../types";
+import { Image } from "astro:assets";
+import buildingImage from "../images/poliklinika.jpg";
+import mapImage from "../images/map.webp";
+import config from "../../config";
+import Button from "../components/Button.astro";
+import Feature from "../components/Feature.astro";
+---
+
+<Layout
+  title={config.links.contact.title}
+  description={config.links.contact.description}
+>
+  <section class="container py-16 grid md:grid-cols-2 h-full gap-8 lg:gap-16">
+    <a href={`tel:${config.phone}`} class="flex flex-col gap-2 text-purple-950">
+      <strong class="uppercase tracking-wider text-gray-900">Telefon:</strong>
+      <Heading size={Size.LG} as="span">
+        {config.phone}
+      </Heading>
+    </a>
+    <a
+      href={`mailto:${config.email}`}
+      class="flex flex-col gap-2 text-purple-950"
+    >
+      <strong class="uppercase tracking-wider text-gray-900"> E-mail:</strong>
+      <Heading size={Size.LG} as="span">
+        {config.email}
+      </Heading>
+    </a>
+    <address class="not-italic max-w-md space-y-4">
+      <strong class="uppercase tracking-wider text-gray-900">Adresa:</strong>
+      <p>
+        Pediatrie Litochleby <br />
+         Hviezdoslavova 1600/6 <br />
+         149 00 Praha 4- Chodov
+      </p>
+      <a target="_blank" href="https://mapy.cz/s/hugepojanu" class="block">
+        <Image src={mapImage} alt="Mapa" />
+      </a>
+      <figure>
+        <Image src={buildingImage} alt="Poliklina Litochleby" />
+      </figure>
+    </address>
+    <article class="max-w-md space-y-4">
+      <strong class="uppercase tracking-wider text-gray-900"
+        >Ordinační hodiny:</strong
+      >
+      <ul>
+        {
+          config.openingHours.map(([day, hours]) => (
+            <li>
+              <strong>{day}</strong>: {hours}
+            </li>
+          ))
+        }
+      </ul>
+      <p>Akutně nemocné pacienty přijímáme bez objednání</p>
+      <p>
+        Poslední pacient bude do čekárny vpuštěn 30 min. před koncem ordinační
+        doby pro nemocné
+      </p>
+      <p>
+        Při vstupu do prostor našeho zdravotnického zařízení v době ordinace pro
+        nemocné doporučujeme používat respirátory FFP2. Děkujeme!
+      </p>
+      <p>
+        Pro zvané (kontroly po nemoci, očkování, preventivní prohlídky) - pouze
+        po předchozí telefonické domluvě na tel.: {config.phone} nebo e-mailu
+        {config.email}
+      </p>
+      <p>
+        Lékař na telefonu ke konzultaci v ordinačních hodinách pro nemocné, na
+        tel.: {config.phone}
+      </p>
+      <p>
+        V době, kdy lékařky ordinují - vyšetřují pacienty - nemohou přijímat
+        hovory. Telefonní hovory vyřizuje sestra, která provádí triage požadavků
+        a stanoví priority konzultací lékařem.
+      </p>
+    </article>
+  </section>
+</Layout>

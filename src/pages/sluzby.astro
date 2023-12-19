@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import { Size } from "../types";
+import { Image } from "astro:assets";
+import heroImage from "../images/hero.webp";
+import doctorImage from "../images/katerina.webp";
+import config from "../../config";
+import Button from "../components/Button.astro";
+import Feature from "../components/Feature.astro";
+---
+
+<Layout
+  title={config.links.services.title}
+  description={config.links.services.description}
+>
+  <section>
+    <p>
+      potvrzení, posudky o zdravotní způsobilosti apod. budou vyhotoveny k
+      převzetí nejdříve za 48 hodin od přijetí (víkend není zahrnut).
+    </p>
+    <p>
+      výpisy ze zdravotní dokumentace pro účely brigády, sportovních akcí apod.
+      budou k vyhotovenyk převzetí do 14dnů od přijetí požadavku (víkend není
+      zahrnut).
+    </p>
+  </section>
+</Layout>

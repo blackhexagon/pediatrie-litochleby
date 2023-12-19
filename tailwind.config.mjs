@@ -10,7 +10,7 @@ export default {
 			padding: '1rem',
 		},
 		fontFamily: {
-			serif: ['Peach', 'serif'],
+			display: ['Josefin Sans', 'sans-serif'],
 		},
 	},
 	plugins: [

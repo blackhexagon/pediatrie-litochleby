@@ -9,14 +9,14 @@ interface Props {
 const { size = Size.MD, as: Element = "h1" } = Astro.props;
 
 const map = {
-  [Size.XS]: "text-xg",
-  [Size.SM]: "text-2xl leading-normal",
-  [Size.MD]: "text-3xl",
-  [Size.LG]: "text-4xl",
-  [Size.XL]: "text-3xl md:text-5xl leading-tight",
+  [Size.XS]: "text-lg md:text-xl",
+  [Size.SM]: "text-xl md:text-2xl leading-normal tracking-tight",
+  [Size.MD]: "text-2xl md:text-3xl tracking-tight",
+  [Size.LG]: "text-3xl md:text-4xl tracking-tighter",
+  [Size.XL]: "text-3xl md:text-5xl leading-tight tracking-tighter",
 };
 ---
 
-<Element class:list={["font-serif", "font-bold", map[size]]}>
+<Element class:list={["font-display", "font-bold", "break-words", map[size]]}>
   <slot />
 </Element>

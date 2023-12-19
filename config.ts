@@ -18,34 +18,46 @@ export default {
     Rieger Konopásková. Nabízíme komplexní péči o pacienty od narození až do
     dospělosti,
   `,
-  links: [
-    {
+  links: {
+    team: {
       title: "Náš tým",
       path: "/nas-team",
+      description: "",
     },
-    {
+    services: {
+      title: "Služby",
+      path: "/sluzby",
+      description: "",
+    },
+    insurance: {
       title: "Pojišťovny",
       path: "/pojistovny",
+      description: "",
     },
-    {
+    equipment: {
       title: "Vybavení",
       path: "/vybavení",
+      description: "",
     },
-    {
+    vaccination: {
       title: "Očkování",
       path: "/ockovani",
+      description: "",
     },
-    {
+    emergency: {
       title: "Pohotovost",
       path: "/pohotovost",
+      description: "",
     },
-    {
+    prices: {
       title: "Ceník",
       path: "/cenik",
+      description: "",
     },
-    {
+    contact: {
       title: "Kontakt",
       path: "/kontakt",
+      description: "",
     },
-  ],
+  },
 };
