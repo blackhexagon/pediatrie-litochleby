@@ -18,6 +18,9 @@ import Intro from "../components/Intro.astro";
   <Intro key="services" />
   <section class="bg-gray-50 py-16">
     <div class="container grid gap-8 grid-cols-1 md:grid-cols-2">
+      <hgroup class="col-span-full">
+        <Heading>Služby</Heading>
+      </hgroup>
       <article class="space-y-4">
         <p class="max-w-prose">
           Služby hrazené z všeobecného zdravotního pojištění, viz stránka <a
@@ -26,21 +29,37 @@ import Intro from "../components/Intro.astro";
           >.
         </p>
         <ul class="list-disc pl-4 space-y-2 max-w-prose">
-          <li>Novorozenecké návštěvy v domácnosti - region Praha 4</li>
-          <li>Povinné očkování</li>
-          <li>Preventivní prohlídky</li>
-          <li>Léčebná péče</li>
-          <li>Standardní laboratorní testy v rámci diagnostiky onemocnění</li>
-          <li>Vyšetření uší otoskopem</li>
           <li>
-            CRP(C-reaktivní protein) vyšetření - rychlá diagnostika sloužící
-            odlišení bakteriální infekce od virové
+            Novorozenecké <strong>návštěvy v domácnosti</strong> - region Praha
+            4
           </li>
-          <li>Vyšetření Hemoglobinu z kapky kapilární krve</li>
+          <li><strong>Povinné očkování</strong></li>
+          <li><strong>Preventivní prohlídky</strong></li>
+          <li><strong>Léčebná péče</strong></li>
           <li>
-            Streptest - rychlotest streptokokově infekce proveden výtěrem z krku
-            s okamžitým výsledkem
+            Standardní <strong>laboratorní testy</strong> v rámci diagnostiky
+            onemocnění
           </li>
+          <li>Vyšetření uší <strong>otoskopem</strong></li>
+          <li>
+            <strong>CRP(C-reaktivní protein) vyšetření</strong> - rychlá
+            diagnostika sloužící odlišení bakteriální infekce od virové
+          </li>
+          <li><strong>Vyšetření Hemoglobinu</strong> z kapky kapilární krve</li>
+          <li>
+            <strong>Streptest</strong> - rychlotest streptokokově infekce
+            proveden výtěrem z krku s okamžitým výsledkem
+          </li>
+        </ul>
+        <p>Další služby:</p>
+        <ul class="list-disc pl-4 space-y-2 max-w-prose">
+          <li>
+            <strong>Výživové poradenství</strong> (Nutriční licence F016 a
+            Certifikát Klinická výživa a intenzivní metabolická péče) vč.
+            spolupráce výživovou ambulancí Diagnostického centra nemocnice
+            Hořovice
+          </li>
+          <li><strong>Nastřelování náušnic</strong></li>
         </ul>
       </article>
       <article class="space-y-4 text-gray-700">
@@ -55,5 +74,29 @@ import Intro from "../components/Intro.astro";
         </p>
       </article>
     </div>
+  </section>
+  <section class="bg-gray-100 py-16">
+    <article class="container space-y-8">
+      <hgroup class="col-span-full">
+        <Heading>Přístrojové vybavení</Heading>
+      </hgroup>
+      <ul class="list-disc pl-4 space-y-2 max-w-prose">
+        <li>
+          <strong>CRP</strong> přístroj, který odhalí, zda se jedná spíše o
+          virovou nebo bakteriální infekci, což umožňuje včasnou a racionální
+          léčbu
+        </li>
+        <li>
+          <strong>Streptest</strong> přístroj, který analyzuje přítomnost
+          beta-hemolytického streptokoka
+        </li>
+        <li><strong>Přístrojová rychlá analýza moči</strong></li>
+        <li><strong>Otoskopie</strong></li>
+        <li>
+          <strong>Ultrazvukový inhalátor</strong> při akutní léčbě dušnosti
+        </li>
+        <li><strong>Pulsní oxymetr</strong></li>
+      </ul>
+    </article>
   </section>
 </Layout>

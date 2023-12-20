@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import config from "../../config";
+import Intro from "../components/Intro.astro";
+---
+
+<Layout
+  title={config.links.vaccination.title}
+  description={config.links.vaccination.description}
+>
+  <Intro key="vaccination" />
+  <section class="bg-gray-50 py-16">
+    <div
+      class="container infogram-embed"
+      data-id="_/rQaO5L9yPVzC9y47IKiz"
+      data-type="interactive"
+      data-title="Očkovací kalendář pro děti"
+    >
+    </div><script>
+      !(function (e, n, i, s) {
+        var d = "InfogramEmbeds";
+        var o = e.getElementsByTagName(n)[0];
+        if (window[d] && window[d].initialized)
+          window[d].process && window[d].process();
+        else if (!e.getElementById(i)) {
+          var r = e.createElement(n);
+          (r.async = 1),
+            (r.id = i),
+            (r.src = s),
+            o.parentNode.insertBefore(r, o);
+        }
+      })(
+        document,
+        "script",
+        "infogram-async",
+        "https://e.infogram.com/js/dist/embed-loader-min.js",
+      );
+    </script>
+  </section>
+</Layout>

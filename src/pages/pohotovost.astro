@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import config from "../../config";
+import Intro from "../components/Intro.astro";
+import Label from "../components/Label.astro";
+---
+
+<Layout
+  title={config.links.emergency.title}
+  description={config.links.emergency.description}
+>
+  <Intro key="emergency" />
+  <section class="bg-gray-50 py-16">
+    <ul class="container grid grid-cols-2 gap-8">
+      <li>
+        <article class="space-y-2">
+          <Label>Thomayerova nemocnice</Label>
+          <address class="not-italic max-w-sm">
+            Vídeňská 800 <br />
+             Praha 4, Krč <br />
+             tel. 261 083 783, 603 566 587 <br />
+             pavilon B1
+          </address>
+        </article>
+      </li>
+      <li>
+        <article class="space-y-2">
+          <Label>FN Motol</Label>
+          <address class="not-italic max-w-sm space-y-1">
+            V Úvalu 84, <br />
+             Praha 5, Motol, 150 06 <br />
+             tel. 224 433 653, 224 433 652
+            <p>
+              přízemí D, za Hlavním vchodem do dětské fakultní nemocnice, úroveň
+              parkoviště P4, u oranžových sloupů vchod vpravo
+            </p>
+          </address>
+        </article>
+      </li>
+      <li>
+        <article class="space-y-2">
+          <Label>VFN KDDL</Label>
+          <address class="not-italic max-w-sm">
+            Ke Karlovu 455/2<br />
+             Praha 2<br />
+             Nové Město<br />
+             tel. 224 967 777<br />budova E3a
+          </address>
+        </article>
+      </li>
+      <li>
+        <article class="space-y-2">
+          <Label>Nemocnice Na Bulovce</Label>
+          <address class="not-italic max-w-sm">
+            Budínova 67/2<br />
+             Praha 8<br />
+             tel.: 283 842 224<br />
+             budova č. 2, přízemí
+          </address>
+        </article>
+      </li>
+    </ul>
+  </section>
+</Layout>

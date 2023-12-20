@@ -9,6 +9,7 @@ import config from "../../config";
 import Button from "../components/Button.astro";
 import Feature from "../components/Feature.astro";
 import Intro from "../components/Intro.astro";
+import Label from "../components/Label.astro";
 ---
 
 <Layout
@@ -22,7 +23,7 @@ import Intro from "../components/Intro.astro";
         href={`tel:${config.phone}`}
         class="flex flex-col gap-2 text-purple-950"
       >
-        <strong class="uppercase tracking-wider text-gray-900">Telefon:</strong>
+        <Label>Telefon:</Label>
         <Heading size={Size.LG} as="span">
           {config.phone}
         </Heading>
@@ -31,13 +32,13 @@ import Intro from "../components/Intro.astro";
         href={`mailto:${config.email}`}
         class="flex flex-col gap-2 text-purple-950"
       >
-        <strong class="uppercase tracking-wider text-gray-900"> E-mail:</strong>
+        <Label>E-mail:</Label>
         <Heading size={Size.LG} as="span">
           {config.email}
         </Heading>
       </a>
       <address class="not-italic max-w-md space-y-4">
-        <strong class="uppercase tracking-wider text-gray-900">Adresa:</strong>
+        <Label>Adresa:</Label>
         <p>
           Pediatrie Litochleby <br />
            Hviezdoslavova 1600/6 <br />
@@ -51,9 +52,7 @@ import Intro from "../components/Intro.astro";
         </figure>
       </address>
       <article class="max-w-md space-y-4">
-        <strong class="uppercase tracking-wider text-gray-900"
-          >Ordinační hodiny:</strong
-        >
+        <Label>Ordinační hodiny:</Label>
         <ul>
           {
             config.openingHours.map(([day, hours]) => (

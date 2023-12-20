@@ -21,42 +21,40 @@ export default {
   links: {
     team: {
       title: "Náš tým",
-      path: "/nas-team",
-      description: "",
+      path: "/nas-tym",
+      description: `Seznamte se s naším týmem, který je odhodlán poskytovat soucitnou a odbornou péči pro podporu zdraví vašeho dítěte na každém kroku jeho vývoje.`,
     },
     services: {
       title: "Služby",
-      heading: "Poskytované služby",
+      heading: "Poskytované služby a vybavení",
       path: "/sluzby",
-      description: `Léčebná a preventivní péče pro děti ve věku 0 - 19 let`,
+      description: `Poskytujeme léčebnou a preventivní péči pro děti ve věku od narození do 19 let`,
     },
     insurance: {
       title: "Pojišťovny",
       path: "/pojistovny",
-      description: "",
-    },
-    equipment: {
-      title: "Vybavení",
-      path: "/vybavení",
-      description: "",
+      description: "Spolupracujeme s následujícími pojišťovnami",
     },
     vaccination: {
       title: "Očkování",
       path: "/ockovani",
-      description: "",
+      description:
+        "Prohlédněte si interaktivní verzi očkovacího kalendáře pro děti – povinné a nepovinné hrazené očkování",
     },
     emergency: {
       title: "Pohotovost",
       path: "/pohotovost",
-      description: "",
+      description:
+        "V době mimo ordinační hodiny pro nemocné, při nutnosti ošetření lékařem, se obraťte na dětskou pohotovost",
     },
     prices: {
       title: "Ceník",
       path: "/cenik",
-      description: "",
+      description: "Úkony nehrazené zdravotními pojišťovnami",
     },
     contact: {
       title: "Kontakt",
+      heading: "Ordinační hodiny a objednání",
       path: "/kontakt",
       description:
         "Kontaktujte naši pediatrickou kliniku pro jakékoli dotazy nebo objednání na schůzku. Jsme tu, abychom poskytli podporu a odbornou péči pro vaše dítě.",

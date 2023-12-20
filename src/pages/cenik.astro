@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import { Size } from "../types";
+import { Image } from "astro:assets";
+import heroImage from "../images/hero.webp";
+import doctorImage from "../images/katerina.webp";
+import config from "../../config";
+import Button from "../components/Button.astro";
+import Feature from "../components/Feature.astro";
+import Intro from "../components/Intro.astro";
+---
+
+<Layout
+  title={config.links.prices.title}
+  description={config.links.prices.description}
+>
+  <Intro key="prices" />
+  <section class="bg-gray-50 py-16">
+    <ul class="container space-y-2">
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Strep-test (většina pojišťoven úkon již hradí)
+        <strong>200,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Aplikace očkovací látky
+        <strong>200,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Posudek pro školky
+        <strong>100,- Kč (každý další 50,- Kč)</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Posudek pro školy, tábory, zotavovací akce, sportovní posudek
+        <strong>200,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Posudek na řidičský průkaz
+        <strong>400,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Zdravot. a potravinářský průkaz
+        <strong>200,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Vystavení nového očkovacího průkazu
+        <strong>150,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Zpráva pro pojišťovnu o úrazu
+        <strong>250,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Výpis ze zdravotní dokumentace na žádost pacienta (např. brigáda)
+        <strong>300,- Kč</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Aplikace náušnic (včetně náušnice z chirurgické oceli)
+        <strong>500 – 700,-Kč dle vybrané náušnice</strong>
+      </li>
+
+      <li class="flex flex-col md:flex-row justify-between max-w-3xl">
+        Zapůjčení inhalátoru
+        <strong>zdarma (300Kč vratná záloha)</strong>
+      </li>
+    </ul>
+  </section>
+</Layout>

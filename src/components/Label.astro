@@ -1,0 +1,11 @@
+---
+interface Props {
+  as: string;
+}
+
+const { as: Element = "strong" } = Astro.props;
+---
+
+<Element class="uppercase tracking-wider text-gray-900 font-bold">
+  <slot />
+</Element>

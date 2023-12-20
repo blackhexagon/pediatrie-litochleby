@@ -1,0 +1,81 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import doctorImage from "../images/katerina.webp";
+import config from "../../config";
+import Intro from "../components/Intro.astro";
+import Heading from "../components/Heading.astro";
+import Label from "../components/Label.astro";
+---
+
+<Layout
+  title={config.links.team.title}
+  description={config.links.team.description}
+>
+  <Intro key="team" />
+  <section class="bg-gray-50 py-16">
+    <div class="container grid gap-8 grid-cols-1 md:grid-cols-2">
+      <article class="space-y-4">
+        <Heading as="h2">MUDr. Kateřina Rieger Konopásková</Heading>
+        <Label as={"h3"}>Odborná praxe</Label>
+        <ul class="space-y-2">
+          <li class="flex">
+            <span class="inline-block basis-32 shrink-0">Od 2024</span>
+             Pediatrie Litochleby Praktický lékař pro děti a dorost
+          </li>
+          <li class="flex">
+            <span class="inline-block basis-32 shrink-0">2011 – 2023</span>
+             Opatovská pediatrie Praktický lékař pro děti a dorost
+          </li>
+          <li class="flex">
+            <span class="inline-block basis-32 shrink-0">Od 1997</span> FN
+            Motol, Pediatrická klinika, Oddělení dětské neurochirurgie, Klinika
+            dětské chirurgie Lékař intenzivista
+          </li>
+        </ul>
+        <Label as={"h3"}>Licence a postgraduální vzdělání</Label>
+        <ul class="list-disc space-y-2 pl-4">
+          <li>Diplom celoživotního vzdělávání lékaře</li>
+          <li>Specializace v oboru PEDIATRIE II. stupně</li>
+          <li>Specializace v oboru PEDIATRIE I. Stupně</li>
+          <li>Specializovaná způsobilost v oboru Intenzivní medicína</li>
+          <li>
+            Specializovaná způsobilost v oboru Praktické lékařství pro děti a
+            dorost
+          </li>
+          <li>
+            Odborná způsobilost v oboru Klinická výživa a intenzivní metabolická
+            péče
+          </li>
+          <li>Funkční licence F016 v oboru Umělá výživa a metabolická péče</li>
+        </ul>
+        <Label as={"h3"}>Je členkou</Label>
+        <ul class="list-disc space-y-2 pl-4">
+          <li>České lékařské komory</li>
+          <li>České lékařské společnosti JEP</li>
+          <li>České lékařské společnosti pediatrické</li>
+          <li>Sdružení praktických lékařů pro děti a dorost</li>
+        </ul>
+        <Label as={"h3"}>Vzdělání</Label>
+        <p>
+          <span class="inline-block w-32">1984 – 1990</span> 1. lékařská fakulta
+          UK Praha, Všeobecné lékařství
+        </p>
+        <Label as={"h3"}>Jazyky</Label>
+        <p>Angličtina, základy němčina</p>
+      </article>
+      <figure class="max-w-md">
+        <Image src={doctorImage} alt="MUDr. Kateřina Rieger Konopásková" />
+      </figure>
+    </div>
+  </section>
+  <section class="bg-gray-100 py-16">
+    <div class="container grid gap-8 grid-cols-1 md:grid-cols-2">
+      <article class="space-y-4">
+        <Heading as="h2">Zora Pospíchalová</Heading>
+        <p>Sestra</p>
+      </article>
+      <figure class="max-w-md"></figure>
+    </div>
+  </section>
+</Layout>

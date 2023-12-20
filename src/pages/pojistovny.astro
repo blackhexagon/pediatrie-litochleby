@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import { Size } from "../types";
+import { Image } from "astro:assets";
+import heroImage from "../images/hero.webp";
+import doctorImage from "../images/katerina.webp";
+import config from "../../config";
+import Button from "../components/Button.astro";
+import Feature from "../components/Feature.astro";
+import Intro from "../components/Intro.astro";
+---
+
+<Layout
+  title={config.links.insurance.title}
+  description={config.links.insurance.description}
+>
+  <Intro key="insurance" />
+  <section>
+    <ul class="container text-lg space-y-2">
+      <li>111 Všeobecná zdravotní pojišťovna</li>
+      <li>201 Vojenská zdravotní pojišťovna</li>
+      <li>207 Oborová ZP zam. bank, pojišťoven a stavebnictví</li>
+      <li>211 Zdravotní pojišťovna ministerstva vnitra</li>
+    </ul>
+  </section>
+</Layout>
