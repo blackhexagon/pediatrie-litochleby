@@ -8,21 +8,52 @@ import doctorImage from "../images/katerina.webp";
 import config from "../../config";
 import Button from "../components/Button.astro";
 import Feature from "../components/Feature.astro";
+import Intro from "../components/Intro.astro";
 ---
 
 <Layout
   title={config.links.services.title}
   description={config.links.services.description}
 >
-  <section>
-    <p>
-      potvrzení, posudky o zdravotní způsobilosti apod. budou vyhotoveny k
-      převzetí nejdříve za 48 hodin od přijetí (víkend není zahrnut).
-    </p>
-    <p>
-      výpisy ze zdravotní dokumentace pro účely brigády, sportovních akcí apod.
-      budou k vyhotovenyk převzetí do 14dnů od přijetí požadavku (víkend není
-      zahrnut).
-    </p>
+  <Intro key="services" />
+  <section class="bg-gray-50 py-16">
+    <div class="container grid gap-8 grid-cols-1 md:grid-cols-2">
+      <article class="space-y-4">
+        <p class="max-w-prose">
+          Služby hrazené z všeobecného zdravotního pojištění, viz stránka <a
+            href={config.links.insurance.path}
+            class="underline text-purple-700">pojišťovny</a
+          >.
+        </p>
+        <ul class="list-disc pl-4 space-y-2 max-w-prose">
+          <li>Novorozenecké návštěvy v domácnosti - region Praha 4</li>
+          <li>Povinné očkování</li>
+          <li>Preventivní prohlídky</li>
+          <li>Léčebná péče</li>
+          <li>Standardní laboratorní testy v rámci diagnostiky onemocnění</li>
+          <li>Vyšetření uší otoskopem</li>
+          <li>
+            CRP(C-reaktivní protein) vyšetření - rychlá diagnostika sloužící
+            odlišení bakteriální infekce od virové
+          </li>
+          <li>Vyšetření Hemoglobinu z kapky kapilární krve</li>
+          <li>
+            Streptest - rychlotest streptokokově infekce proveden výtěrem z krku
+            s okamžitým výsledkem
+          </li>
+        </ul>
+      </article>
+      <article class="space-y-4 text-gray-700">
+        <p class="max-w-prose">
+          Potvrzení, posudky o zdravotní způsobilosti apod. budou vyhotoveny k
+          převzetí nejdříve za 48 hodin od přijetí (víkend není zahrnut).
+        </p>
+        <p class="max-w-prose">
+          Výpisy ze zdravotní dokumentace pro účely brigády, sportovních akcí
+          apod. budou k vyhotovenyk převzetí do 14dnů od přijetí požadavku
+          (víkend není zahrnut).
+        </p>
+      </article>
+    </div>
   </section>
 </Layout>

@@ -26,8 +26,9 @@ export default {
     },
     services: {
       title: "Služby",
+      heading: "Poskytované služby",
       path: "/sluzby",
-      description: "",
+      description: `Léčebná a preventivní péče pro děti ve věku 0 - 19 let`,
     },
     insurance: {
       title: "Pojišťovny",
@@ -57,7 +58,8 @@ export default {
     contact: {
       title: "Kontakt",
       path: "/kontakt",
-      description: "",
+      description:
+        "Kontaktujte naši pediatrickou kliniku pro jakékoli dotazy nebo objednání na schůzku. Jsme tu, abychom poskytli podporu a odbornou péči pro vaše dítě.",
     },
   },
 };

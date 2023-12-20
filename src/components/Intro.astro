@@ -1,0 +1,17 @@
+---
+import config from "../../config";
+import { Size } from "../types";
+import Heading from "./Heading.astro";
+
+interface Props {
+  key: keyof typeof config.links;
+}
+
+const { key } = Astro.props;
+const link = config.links[key];
+---
+
+<section class="container py-8 sm:py-16 text-purple-950 space-y-6">
+  <Heading size={Size.XL}>{link.heading || link.title}</Heading>
+  <p class="text-amber-950 max-w-prose text-xl">{link.description}</p>
+</section>
