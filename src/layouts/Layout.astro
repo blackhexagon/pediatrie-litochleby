@@ -11,9 +11,8 @@ interface Props {
   title: string;
   description: string;
 }
-const pathname = new URL(Astro.request.url).pathname;
+const currentPath = Astro.url.pathname;
 const { title, description } = Astro.props;
-const currentPath = pathname;
 ---
 
 <!doctype html>
@@ -21,7 +20,7 @@ const currentPath = pathname;
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="auuthor" content="Matouš Trča" />
+    <meta name="author" content="Matouš Trča" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -75,10 +74,12 @@ const currentPath = pathname;
                     class:list={[
                       "uppercase py-2 font-bold hover:text-amber-800 transition-all tracking-wider whitespace-nowrap text-sm outline-none",
                       "focus:text-amber-500 focus:border-b-2 focus:border-amber-600",
-                      link.path === currentPath &&
+                      currentPath.startsWith(link.path) &&
                         "text-amber-600 border-b-2 border-amber-600",
                     ]}
-                    aria-current={link.path === currentPath ? "page" : "false"}
+                    aria-current={
+                      currentPath.startsWith(link.path) ? "page" : "false"
+                    }
                   >
                     {link.title}
                   </a>
@@ -178,30 +179,16 @@ const currentPath = pathname;
 </style>
 
 <script>
-  function debounce(func, wait) {
-    let timeout;
-
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-    };
-  }
-
-  const debouncedResize = debounce(function () {
+  const scroll = function () {
     if (window.pageYOffset > 0) {
       // or use `document.documentElement.scrollTop`
       document.body.classList.add("scrolled");
     } else {
       document.body.classList.remove("scrolled");
     }
-  }, 250);
+  };
 
-  debouncedResize();
+  scroll();
 
-  window.addEventListener("scroll", debouncedResize);
+  window.addEventListener("scroll", scroll);
 </script>
