@@ -1,22 +1,24 @@
 export default {
   title: "Pediatrie Litochleby",
   phone: "+420 272 919 633",
+  gsm: "+420 775 073 796",
   email: "pediatrie.litochleby@gmail.com",
+  whatsapp: "https://wa.me/420775073796",
   openingHours: [
-    ["pondělí", "8:00 - 10:00"],
-    ["úterý", "14:00 - 16:00"],
-    ["středa", "8:00 - 10:00"],
-    ["čtvrtek", "14:00 - 16:00"],
-    ["pátek", "8:00 - 10:00"],
+    ["pondělí", "8:00 - 12:00"],
+    ["úterý", "8:00 - 12:00"],
+    ["středa", "8:00 - 12:00"],
+    ["čtvrtek", "12:00 - 16:00"],
+    ["pátek", "8:00 - 12:00"],
   ],
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
     Konopáskové nacházející se na Poliklinice Litochleby na pražském Chodově.
     Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech
-    MUDr. Marcelou Machynkovou, jejíž pokračovatkou je atestované lékařka s
+    MUDr. Marcelou Machynkovou, jejíž pokračovatelkou je atestované lékařka s
     dlouholetouetou praxí v ambulantní a nemocniční pediatrii MUDr. Kateřina
     Rieger Konopásková. Nabízíme komplexní péči o pacienty od narození až do
-    dospělosti,
+    dospělosti.
   `,
   links: {
     team: {
@@ -40,6 +42,12 @@ export default {
       path: "/ockovani",
       description:
         "Prohlédněte si interaktivní verzi očkovacího kalendáře pro děti – povinné a nepovinné hrazené očkování",
+    },
+    faq: {
+      title: "Dotazy",
+      path: "/dotazy",
+      description:
+        "Máte dotazy ohledně dětského zdraví? Získejte informace důvěryhodně od našich pediatrických odborníků.",
     },
     emergency: {
       title: "Pohotovost",

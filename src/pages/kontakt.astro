@@ -5,9 +5,8 @@ import { Size } from "../types";
 import { Image } from "astro:assets";
 import buildingImage from "../images/poliklinika.jpg";
 import mapImage from "../images/map.webp";
+import waImage from "../images/wa_button.png";
 import config from "../../config";
-import Button from "../components/Button.astro";
-import Feature from "../components/Feature.astro";
 import Intro from "../components/Intro.astro";
 import Label from "../components/Label.astro";
 ---
@@ -28,6 +27,12 @@ import Label from "../components/Label.astro";
           {config.phone}
         </Heading>
       </a>
+      <a href={`tel:${config.gsm}`} class="flex flex-col gap-2 text-purple-950">
+        <Label>Mobil:</Label>
+        <Heading size={Size.LG} as="span">
+          {config.gsm}
+        </Heading>
+      </a>
       <a
         href={`mailto:${config.email}`}
         class="flex flex-col gap-2 text-purple-950 break-all"
@@ -36,6 +41,13 @@ import Label from "../components/Label.astro";
         <Heading size={Size.LG} as="span">
           {config.email}
         </Heading>
+      </a>
+      <a
+        href={`${config.whatsapp}`}
+        class="flex flex-col gap-2 text-purple-950 break-all"
+      >
+        <Label>Chat:</Label>
+        <Image src={waImage} alt="Začít chatovat" class="w-64" />
       </a>
       <address class="not-italic max-w-md space-y-4">
         <Label>Adresa:</Label>
@@ -62,6 +74,7 @@ import Label from "../components/Label.astro";
             ))
           }
         </ul>
+        <p>Objednaní po dohodě</p>
         <p>Akutně nemocné pacienty přijímáme bez objednání</p>
         <p>
           Poslední pacient bude do čekárny vpuštěn 30 min. před koncem ordinační

@@ -8,6 +8,7 @@ import doctorImage from "../images/katerina.webp";
 import config from "../../config";
 import Button from "../components/Button.astro";
 import Feature from "../components/Feature.astro";
+import Label from "../components/Label.astro";
 ---
 
 <Layout description={config.description}>
@@ -46,8 +47,8 @@ import Feature from "../components/Feature.astro";
     </article>
     <article class="max-w-3xl mx-auto text-center">
       <Heading size={Size.LG}>
-        Soucitnou péči a osobním přístupem se snažíme zajistit, aby každá
-        návštěva byla co nejpříjemnější a nejužitečnější pro celou rodinu.
+        Osobním přístupem se snažíme zajistit, aby každá návštěva byla co
+        nejpříjemnější a nejužitečnější pro celou rodinu.
       </Heading>
     </article>
   </section>
@@ -82,33 +83,21 @@ import Feature from "../components/Feature.astro";
     class="py-24 bg-amber-400 text-purple-950 first-child:text-center space-y-8"
   >
     <Heading size={Size.LG}>Náš tým</Heading>
-    <div
-      class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 text-center"
-    >
+    <div class="max-w-3xl mx-auto space-y-8 text-center">
       <article class="flex flex-col items-center gap-2">
         <Image
           src={doctorImage}
           class="max-w-xs"
           alt="Kateřina Rieger Konpásková"
         />
+        <Label>Doktorka</Label>
         <h3 class="font-bold text-xl mt-auto">
           MUDr. Kateřina Rieger Konopásková
         </h3>
-        <p>doktorka</p>
       </article>
       <article class="flex flex-col items-center gap-2">
-        <svg
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-full text-white max-w-lg"
-        >
-          <path
-            fill="currentColor"
-            d="M48.8,-46.2C65.4,-32.3,82.3,-16.1,83.5,1.2C84.7,18.6,70.2,37.1,53.7,47.7C37.1,58.3,18.6,61,-1.9,62.9C-22.3,64.7,-44.7,65.9,-56,55.3C-67.4,44.7,-67.9,22.3,-62.4,5.5C-57,-11.4,-45.5,-22.8,-34.1,-36.7C-22.8,-50.6,-11.4,-67.1,2.4,-69.5C16.1,-71.9,32.3,-60.1,48.8,-46.2Z"
-            transform="translate(100 100) scale(1.15)"></path>
-        </svg>
+        <Label>sestra</Label>
         <h3 class="font-bold text-xl mt-auto">Zora Pospíchalová</h3>
-        <p>sestra</p>
       </article>
       <p class="col-span-full text-center">
         <Button secondary href={config.links.team.path}>

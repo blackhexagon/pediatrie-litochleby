@@ -4,6 +4,7 @@ import logoOZP from "../images/logo_ozp.svg";
 import logoMZV from "../images/logo_mzv.svg";
 import logoVZP from "../images/logo_vzp.png";
 import logoVOJ from "../images/logo_voj.png";
+import waButton from "../images/wa_button.png";
 import { Image } from "astro:assets";
 import Heading from "../components/Heading.astro";
 import { Size } from "../types";
@@ -112,13 +113,21 @@ const { title, description } = Astro.props;
             Hviezdoslavova 1600/6 <br />
              149 00 Praha 4- Chodov
           </p>
-           Telefon: <a class="font-bold" href={`tel:${config.phone}`}
-            >{config.phone}</a
-          >
-          <br />
-           E-mail: <a class="font-bold" href={`mailto:${config.email}`}
-            >{config.email}</a
-          >
+          <p>
+            Telefon: <a class="font-bold" href={`tel:${config.phone}`}
+              >{config.phone}</a
+            >
+          </p>
+          <p>
+            Mobil: <a class="font-bold" href={`tel:${config.gsm}`}
+              >{config.gsm}</a
+            >
+          </p>
+          <p>
+            E-mail: <a class="font-bold" href={`mailto:${config.email}`}
+              >{config.email}</a
+            >
+          </p>
         </address>
         <figure class="flex flex-col content-start gap-3">
           <figcaption class="font-bold w-full">Pojišťovny</figcaption>
@@ -155,10 +164,19 @@ const { title, description } = Astro.props;
               ))
             }
           </ul>
+          <p>Objednaní po dohodě</p>
           <p>Akutně nemocné pacienty přijímáme bez objednání</p>
         </article>
       </div>
     </footer>
+    <a
+      aria-description="Začít chatovat na WhatsAppu"
+      href={config.whatsapp}
+      target="_blank"
+      class="fixed right-0 bottom-12 w-60 translate-x-48 md:w-auto md:translate-x-60 drop-shadow-xl hover:translate-x-3 transition-transform"
+    >
+      <Image src={waButton} alt="Začít chatovat na WhatsAppu" />
+    </a>
   </body>
 </html>
 

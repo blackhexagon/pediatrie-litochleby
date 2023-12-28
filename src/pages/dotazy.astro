@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Heading from "../components/Heading.astro";
+import { Size } from "../types";
+import { Image } from "astro:assets";
+import heroImage from "../images/hero.webp";
+import doctorImage from "../images/katerina.webp";
+import config from "../../config";
+import Button from "../components/Button.astro";
+import Feature from "../components/Feature.astro";
+import Intro from "../components/Intro.astro";
+---
+
+<Layout
+  title={config.links.faq.title}
+  description={config.links.faq.description}
+>
+  <Intro key="faq" />
+  <section class="bg-gray-50 py-16">
+    <article class="container">
+      <hgroup class="col-span-full mb-8">
+        <Heading as="h2">Neštovice</Heading>
+      </hgroup>
+      <div class="space-y-4 max-w-prose">
+        <p>
+          Onemocnění se projevuje výsevem drobných puchýřků s červeným okolím,
+          může být těžší či lehčí průběh. Puchýře se objevují po celém těle, ve
+          vlasové části hlavy, genitáliích i na sliznicích, může se objevit
+          teplota, bolest hlavy, bolesti v krku, Dítě je infekční 2 dny před
+          vysetím puchýřů a po celou dobu výsevu až do zaschnutí puchýřů.
+        </p>
+
+        <p>
+          Inkubační doba je 3 týdny, pozor u osob starších či oslabených, které
+          již neštovice prodělaly, může vyvolat styk s neštovicemi pásový opar.
+        </p>
+
+        <p class="pb-4">
+          Jelikož se jedná o neuroinfekci, velkou zátěž pro dětský organismus,
+          je potřeba dítěti dopřát alespoň týden po zaschnutí puchýřů
+          rekonvalescenci. Dítě je nutné v letních měsících ještě minimálně 14
+          dní chránit před sluncem, nosit pokrývku hlavy a pobývat spíše ve
+          stínu.
+        </p>
+
+        <Heading as="h3" size={Size.SM}>Doporučená léčba</Heading>
+
+        <p>Časté <strong>sprchování</strong> nejméně 4x denně vlažnou vodou</p>
+
+        <p>
+          Koupele či oplach v roztoku <strong>hypermanganu</strong>. <br />
+
+           Návod: Rozpusťte ve vodě množství krystalů cca na špičku nože, roztok
+          musí být slabě růžový – nikoli fialový. Nerozpuštěné krystaly mohou spálit
+          pokožku, proto je nutné hypermangan důkladně rozpustit. Dokud nepřestanou
+          „pouštět mlhu“, neposazujte dítě do vany.
+        </p>
+
+        <p>
+          Lokálně nemusíte mazat nic, můžete aplikovat gel ViraSoothe nebo v
+          tenké vrstvě aplikovat pudr pro úlevu proti svědění.
+        </p>
+
+        <p>Při svědění můžete podat ústy volně prodejné kapky Fenistil.</p>
+
+        <p>Při teplotě nad 38 stupňů snižujte teplotu, jak jste zvyklí</p>
+      </div>
+    </article>
+  </section>
+  <section class="bg-gray-100 py-16">
+    <article class="container space-y-8">
+      <hgroup class="col-span-full">
+        <Heading as="h2">Horečka</Heading>
+      </hgroup>
+      <div class="space-y-4 max-w-prose">
+        <Heading as="h3" size={Size.SM} />
+        <p>
+          Teplota <strong>do 38°C</strong> ( měřená v zadečku do 38,5°C) –
+          takovou teplotu <strong>neléčíme</strong>. Dítě musí být v klidu,
+          dodáváme dostatek tekutin.
+        </p>
+        <p>
+          Teplota <strong>nad 38 °C</strong> ( rektálně nad 38,5°C ) – teplotu
+          léčíme <strong>antipyretiky</strong> v příslušné dávce ( vždy
+          dávkujeme dle váhy dítěte, nikoli podle věku). Pokud je horečka úporná
+          a vrací se velmi často během dne, můžeme střídat paracetamolovou řadu
+          léků (Paralen, Panadol) s ibuprofenovou řadu léků ( Nurofen, Ibalgin,
+          Ibuprofen) po 3-4 hodinách ( dávkování viz. níže). Teplotu neléčíme
+          preventivně, pouze pokud teplota překročí 38°C. Kromě podávání léků
+          proti teplotě je možno použít též fyzikální chlazení (viz. níže).
+        </p>
+        <p class="pb-4">
+          Dítěti nabízíme <strong>tekutiny</strong> častěji než obvykle,
+          sledujeme hlavně jeho celkový stav. Pokud je dítě jinak čilé, pije,
+          močí a nemá jiné znepokojivé obtíže, je možno s návštěvou lékaře
+          vyčkat při dobrém stavu 2-3 dny. Pokud Vás ale celkový stav dítěte z
+          jakéhokoli důvodu znepokojuje (zvrací, má vyrážku na kůži, nepije, je
+          apatické apod.) , přijďte na kontrolu ihned. U novorozence či kojence
+          do 3 měsíců návštěvu lékaře při horečce nikdy neodkládáme.
+        </p>
+        <Heading as="h3" size={Size.SM}>Dávkování léků</Heading>
+        <p>
+          <strong class="block">Paracetamol (Panadol, Paralen)</strong>
+           15 mg/kg/na dávku max. 4x denně po 6 hodinách (tzn. dítě vážící 10 kg
+          může dostat 150 mg každých 6 hodin)
+        </p>
+        <p class="pb-4">
+          <strong class="block">Ibuprofen (Ibalgin, Nurofen)</strong>
+           10 mg /kg/dávku max . 3x denně po 8 hodinách
+        </p>
+        <Heading as="h3" size={Size.SM}>Fyzikální chlazení</Heading>
+        <p>
+          <strong>Omývání houbou</strong> (sponging) – dítě posadíme do vaničky,
+          napustíme vodu (nikoli studenou!) – teplota kolem 30°C, omýváme dítě
+          houbou cca 10-20 min
+        </p>
+        <p>
+          <strong>Zábaly</strong> – hrudník a břicho zabalíme do vlažné tkaniny
+          na 10-15min
+        </p>
+        <p>
+          Fyzikální chlazení nepoužíváme: pokud je dítě špatně snáší, má ledové
+          nohy a ruce, má vyrážku na kůži
+        </p>
+      </div>
+    </article>
+  </section>
+  <section class="bg-gray-50 py-16">
+    <article class="container">
+      <hgroup class="col-span-full mb-8">
+        <Heading as="h2">Dehydratace</Heading>
+      </hgroup>
+      <div class="space-y-4 max-w-prose">
+        <p>
+          U dětí je příjem a <strong>výdej tekutin 4–5× vyšší</strong> než u
+          dospělých a zároveň mívají vyšší fyzickou aktivitu. Abychom předešli
+          dehydrataci, je potřeba hlídat jejich příjem tekutin, a to nejen v
+          létě. Děti a kojenci jsou náchylnější k dehydrataci způsobené průjmem,
+          horečkou a zvracením. Je to proto, že mají rychlejší metabolismus, což
+          způsobuje také větší ztrátu vody.
+        </p>
+        <p>
+          Ve všech případech možné dehydratace dětí raději kontaktujte lékaře a
+          požádejte o radu. Pokud stav dítěte umožní domácí léčbu, možným
+          řešením jsou tzv. ORR – orální rehydratační roztoky. Jsou navrženy
+          tak, aby nahradily chybějící elektrolyty a cukr a doplňují ztrátu
+          vody, která vznikla např. zvracením nebo průjmem.
+        </p>
+        <Heading as="h3" size={Size.SM}>Příznaky lehké dehydratace</Heading>
+        <ul class="list-disc ml-4">
+          <li>
+            dítě je neklidné nebo naopak unavenější a spavější než obvykle,
+          </li>
+          <li>
+            dítě méně často močí (u kojenců méně než 6 pomočených plen denně),
+          </li>
+          <li>dítě má oschlé sliznice v ústech\,</li>
+          <li>dítě při pláči méně slzí,</li>
+          <li>dítě má lehce propadlou velkou fontanelu,</li>
+          <li>ztráta hmotnosti je do 10 %.</li>
+        </ul>
+        <Heading as="h3" size={Size.SM}>Příznaky střední dehydratace</Heading>
+        <ul class="list-disc ml-4">
+          <li>dítě je velmi neklidné nebo naopak velmi spavé,</li>
+          <li>dítě má výrazně vpadlé oči,</li>
+          <li>dítě má chladné ruce a nohy,</li>
+          <li>dítě má výrazně suché sliznice v ústech,</li>
+          <li>dítě močí pouze jednou nebo dvakrát denně,</li>
+          <li>oči a velká fontanela jsou výrazně propadlé,</li>
+          <li>ztráta hmotnosti je nad 10 %.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+</Layout>
