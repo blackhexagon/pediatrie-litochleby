@@ -5,17 +5,17 @@ export default {
   email: "pediatrie.litochleby@gmail.com",
   whatsapp: "https://wa.me/420775073796",
   openingHours: [
-    ["pondělí", "8:00 - 12:00"],
-    ["úterý", "8:00 - 12:00"],
-    ["středa", "8:00 - 12:00"],
-    ["čtvrtek", "12:00 - 16:00"],
-    ["pátek", "8:00 - 12:00"],
+    ["pondělí", "8:00 - 11:00"],
+    ["úterý", "8:00 - 11:00"],
+    ["středa", "8:00 - 11:00"],
+    ["čtvrtek", "13:00 - 16:00"],
+    ["pátek", "8:00 - 11:00"],
   ],
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
-    Konopáskové nacházející se na Poliklinice Litochleby na pražském Chodově.
+    Konopáskové nacházející se na poliklinice Litochleby na pražském Chodově.
     Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech
-    MUDr. Marcelou Machynkovou, jejíž pokračovatelkou je atestované lékařka s
+    MUDr. Marcelou Machynkovou. Praxi nyní převzala atestovaná lékařka s
     dlouholetouetou praxí v ambulantní a nemocniční pediatrii MUDr. Kateřina
     Rieger Konopásková. Nabízíme komplexní péči o pacienty od narození až do
     dospělosti.
@@ -24,7 +24,7 @@ export default {
     team: {
       title: "Náš tým",
       path: "/nas-tym",
-      description: `Seznamte se s naším týmem, který je odhodlán poskytovat soucitnou a odbornou péči pro podporu zdraví vašeho dítěte na každém kroku jeho vývoje.`,
+      description: `Seznamte se s naším týmem, který je odhodlán poskytovat odbornou péči pro podporu zdraví vašeho dítěte na každém kroku jeho vývoje.`,
     },
     services: {
       title: "Služby",
@@ -65,7 +65,7 @@ export default {
       heading: "Ordinační hodiny a objednání",
       path: "/kontakt",
       description:
-        "Kontaktujte naši pediatrickou kliniku pro jakékoli dotazy nebo objednání na schůzku. Jsme tu, abychom poskytli podporu a odbornou péči pro vaše dítě.",
+        "Kontaktujte naši pediatrickou ordinaci pro jakékoli dotazy nebo objednání na schůzku. Jsme tu, abychom poskytli podporu a odbornou péči pro vaše dítě.",
     },
   },
 };

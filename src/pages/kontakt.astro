@@ -17,7 +17,7 @@ import Label from "../components/Label.astro";
 >
   <Intro key={"contact"} />
   <section class="bg-gray-50 py-16">
-    <div class="container grid md:grid-cols-2 h-full gap-8 lg:gap-16">
+    <div class="container grid lg:grid-cols-2 h-full gap-8 lg:gap-16">
       <a
         href={`tel:${config.phone}`}
         class="flex flex-col gap-2 text-purple-950"
@@ -35,7 +35,7 @@ import Label from "../components/Label.astro";
       </a>
       <a
         href={`mailto:${config.email}`}
-        class="flex flex-col gap-2 text-purple-950 break-all"
+        class="flex flex-col gap-2 text-purple-950"
       >
         <Label>E-mail:</Label>
         <Heading size={Size.LG} as="span">
@@ -44,7 +44,7 @@ import Label from "../components/Label.astro";
       </a>
       <a
         href={`${config.whatsapp}`}
-        class="flex flex-col gap-2 text-purple-950 break-all"
+        class="flex flex-col gap-2 text-purple-950"
       >
         <Label>Chat:</Label>
         <Image src={waImage} alt="Začít chatovat" class="w-64" />
