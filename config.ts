@@ -1,5 +1,6 @@
 export default {
   title: "Pediatrie Litochleby",
+  news: null,
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
   email: "pediatrie.litochleby@gmail.com",
