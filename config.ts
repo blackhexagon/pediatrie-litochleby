@@ -1,16 +1,16 @@
 export default {
   title: "Pediatrie Litochleby",
-  news: null,
+  news: "Pozor, změna ordinačních hodin pro nemocné.<br>Více informací na stránce <a href='/kontakt' class='underline'>kontakt</a> nebo v patičce.<br>Děkujeme za pochopení",
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
   email: "pediatrie.litochleby@gmail.com",
   whatsapp: "https://wa.me/420775073796",
   openingHours: [
-    ["pondělí", "8:00 - 11:00"],
-    ["úterý", "8:00 - 11:00"],
-    ["středa", "8:00 - 11:00"],
-    ["čtvrtek", "13:00 - 16:00"],
-    ["pátek", "8:00 - 11:00"],
+    ["Pondělí", "7:30 - 12:00"],
+    ["Úterý", "12:30 -16:00"],
+    ["Středa", "8:00 - 12:00"],
+    ["Čtvrtek", "12:30 - 16:00"],
+    ["Pátek", "7:30 - 12:00"],
   ],
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
