@@ -6,11 +6,16 @@ export default {
   email: "pediatrie.litochleby@gmail.com",
   whatsapp: "https://wa.me/420775073796",
   openingHours: [
-    ["Pondělí", "7:30 - 12:00"],
-    ["Úterý", "12:30 -16:00"],
-    ["Středa", "8:00 - 12:00"],
+    ["Pondělí", "7:30 - 11:00"],
+    ["Úterý", "11:00 -15:00"],
+    ["Středa", "8:00 - 11:00"],
     ["Čtvrtek", "12:30 - 16:00"],
-    ["Pátek", "7:30 - 12:00"],
+    ["Pátek", "7:30 - 11:00"],
+  ],
+  controlHours: [
+    ["Pondělí", "11:00 - 12:00"],
+    ["Středa", "11:00 - 12:00"],
+    ["Pátek", "11:00 - 12:00"],
   ],
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger

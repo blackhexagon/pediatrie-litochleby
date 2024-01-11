@@ -64,7 +64,7 @@ import Label from "../components/Label.astro";
         </figure>
       </address>
       <article class="max-w-md space-y-4">
-        <Label>Ordinační hodiny pro nemocné:</Label>
+        <Label as="h3">Ordinační hodiny pro nemocné:</Label>
         <ul>
           {
             config.openingHours.map(([day, hours]) => (
@@ -74,11 +74,20 @@ import Label from "../components/Label.astro";
             ))
           }
         </ul>
-        <p>Objednaní po dohodě</p>
+        <Label as="h3">Ordinační hodiny pro kontroly a objednané:</Label>
+        <ul>
+          {
+            config.controlHours.map(([day, hours]) => (
+              <li>
+                <strong>{day}</strong>: {hours}
+              </li>
+            ))
+          }
+        </ul>
         <p>Akutně nemocné pacienty přijímáme bez objednání</p>
         <p>
           Poslední pacient bude ošetřen <strong>15 minut před koncem</strong>
-          pracovní doby
+           pracovní doby
         </p>
         <p>
           Při vstupu do prostor našeho zdravotnického zařízení v době ordinace

@@ -102,7 +102,7 @@ const { title, description } = Astro.props;
     </main>
     <footer class="bg-purple-950 text-white py-8">
       <div
-        class="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        class="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
       >
         <address class="not-italic max-w-sm space-y-2">
           <p>
@@ -164,8 +164,20 @@ const { title, description } = Astro.props;
               ))
             }
           </ul>
-          <p>Objednaní po dohodě</p>
           <p>Akutně nemocné pacienty přijímáme bez objednání</p>
+        </article>
+        <article class="space-y-2">
+          <strong>Ordinační hodiny pro objednané</strong>
+          <ul class="space-y-1">
+            {
+              config.controlHours.map(([day, hours]) => (
+                <li>
+                  <span class="inline-block w-20">{day}:</span>
+                  {hours}
+                </li>
+              ))
+            }
+          </ul>
         </article>
       </div>
     </footer>
