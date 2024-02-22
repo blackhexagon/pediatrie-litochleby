@@ -1,6 +1,6 @@
 export default {
   title: "Pediatrie Litochleby",
-  news: "Pozor, změna ordinačních hodin pro nemocné.<br>Více informací na stránce <a href='/kontakt' class='underline'>kontakt</a> nebo v patičce.<br>Děkujeme za pochopení",
+  news: "V případě zájmu o registraci prosíme zaslat osobní údaje (jméno dítěte, adresa, pojišťovna, rodné číslo a telefon) na <a href='mailto:pediatrie.litochleby@gmail.com' class='underline'>pediatrie.litochleby@gmail.com</a>. Děkujeme",
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
   email: "pediatrie.litochleby@gmail.com",
