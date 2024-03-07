@@ -1,6 +1,9 @@
 export default {
   title: "Pediatrie Litochleby",
-  news: "V případě zájmu o registraci prosíme zaslat osobní údaje (jméno dítěte, adresa, pojišťovna, rodné číslo a telefon) na <a href='mailto:pediatrie.litochleby@gmail.com' class='underline'>pediatrie.litochleby@gmail.com</a>. Děkujeme",
+  news: [
+    `Termíny předporodnich konzultaci jsou 22. 3. od 13 hod a 25. 4. od 8 hod. V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com'>e-mailem</a>.`,
+    `V případě zájmu o registraci nám, prosím, napište email na <a href='mailto:pediatrie.litochleby@gmail.com'>pediatrie.litochleby@gmail.com</a> a domluvte si schůzku v ordinaci pro vyplnění a podpis Registračního listu a zadání dalších důležitých údajů.`,
+  ],
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
   email: "pediatrie.litochleby@gmail.com",
@@ -31,6 +34,11 @@ export default {
       title: "Náš tým",
       path: "/nas-tym",
       description: `Seznamte se s naším týmem, který je odhodlán poskytovat odbornou péči pro podporu zdraví vašeho dítěte na každém kroku jeho vývoje.`,
+    },
+    registration: {
+      title: "Registrace",
+      path: "/registrace",
+      description: `Registrace nových pacientů`,
     },
     services: {
       title: "Služby",

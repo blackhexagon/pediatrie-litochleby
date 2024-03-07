@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import config from "../../config";
+import Intro from "../components/Intro.astro";
+import Heading from "../components/Heading.astro";
+---
+
+<Layout
+  title={config.links.registration.title}
+  description={config.links.registration.description}
+>
+  <Intro key="registration" />
+  <section class="bg-gray-50 py-16 space-y-8">
+    <div class="container grid gap-8 grid-cols-1 md:grid-cols-2" ">
+      <article class="space-y-4">
+        <p class="max-w-prose">
+          Pokud jste u svého stávajícího praktického lékaře pro děti a dorost
+          zaregistrováni déle než 3 měsíce, pak můžete přejít k novému
+          praktickému lékaři.
+        </p>
+        <p class="max-w-prose pb-8">
+          Dříve to není ze zákona možné. Po registraci nemusíte již navštívit
+          svého předešlého lékaře.
+        </p>
+        <Heading as="h2">Postup registrace do naší ordinace</Heading>
+        <ol class="list-decimal pl-4 space-y-4 max-w-prose">
+          <li>
+            Osobně, e-mailem nebo telefonicky si domluvíte termín pro registraci
+          </li>
+          <li>
+            V ordinaci vyplníte Registrační list pro každého nového pacienta a
+            sdělíte nám další informace- jména rodičů, telefonické a emailové
+            kontakty, jméno a adresu předchozího ošetřujícího lékaře
+          </li>
+          <li>
+            Od tohoto okamžiku jste již naším pacientem a můžete nás v případě
+            potřeby navštěvovat.
+          </li>
+          <li>My vyžádáme zdravotnické informace od stávajícího lékaře</li>
+        </ol>
+      </article>
+      <article class="space-y-4">
+        <Heading as="h2">Upozornění</Heading>
+        <p class="max-w-prose">
+          Registrace k lékaři proběhne až po osobní návštěvě ordinace a vyplnění
+          a podpisu tištěného registračního lístku. Vyplnění tohoto formuláře je
+          tedy nezávazné a neznamená automatickou registraci k příslušnému
+          lékaři. O konečné registraci pacienta rozhoduje vždy lékař.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>
