@@ -1,7 +1,7 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
-    `Termíny předporodnich konzultaci jsou 22. 3. od 13 hod a 25. 4. od 8 hod. V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com'>e-mailem</a>.`,
+    `Termíny předporodnich konzultaci jsou 22. 3. od 13 hod, 25. 4. od 8 hod, 30. 5. a 21. 6. 2024 . V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com'>e-mailem</a>.`,
     `V případě zájmu o registraci nám, prosím, napište email na <a href='mailto:pediatrie.litochleby@gmail.com'>pediatrie.litochleby@gmail.com</a> a domluvte si schůzku v ordinaci pro vyplnění a podpis Registračního listu a zadání dalších důležitých údajů.`,
   ],
   phone: "+420 272 919 633",
