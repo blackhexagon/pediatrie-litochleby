@@ -1,8 +1,8 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
-    `Ve čtvrtek 4. 4. ordinujeme pro nemocné z provozních důvodu od 12:15 do 14:00.`,
-    `Termíny předporodnich konzultaci jsou 22. 3. od 13 hod, 25. 4. od 8 hod, 30. 5. a 21. 6. 2024 . V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com'>e-mailem</a>.`,
+    `Ve středu 10. 4. mezi 10:00 a 12:00 a ve čtvrtek 11. 4. mezi 12:30 a 15:00 bude z provozních důvodů omezený provoz. Děkujeme za pochopení`,
+    `Termíny předporodnich konzultaci jsou 25. 4. od 8 hod, 30. 5. a 21. 6. 2024 . V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com'>e-mailem</a>.`,
     `V případě zájmu o registraci nám, prosím, napište email na <a href='mailto:pediatrie.litochleby@gmail.com'>pediatrie.litochleby@gmail.com</a> a domluvte si schůzku v ordinaci pro vyplnění a podpis Registračního listu a zadání dalších důležitých údajů.`,
   ],
   phone: "+420 272 919 633",
