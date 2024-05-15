@@ -4,6 +4,7 @@ import logoOZP from "../images/logo_ozp.svg";
 import logoMZV from "../images/logo_mzv.svg";
 import logoVZP from "../images/logo_vzp.png";
 import logoVOJ from "../images/logo_voj.png";
+import logoPZP from "../images/logo_pzp.svg";
 import waButton from "../images/wa_button.png";
 import { Image } from "astro:assets";
 import Heading from "../components/Heading.astro";
@@ -139,6 +140,11 @@ const { title, description } = Astro.props;
           <Image
             src={logoVOJ}
             alt="Logo VOJ"
+            class="h-8 w-24 object-contain object-left"
+          />
+          <Image
+            src={logoPZP}
+            alt="Logo 205"
             class="h-8 w-24 object-contain object-left"
           />
           <Image

@@ -1,9 +1,7 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
-    `Z důvodu dovolené je dne 9. 5. 2024 ordinační doba pro nemocné od 8:00 do 12:00.`,
-    `Termíny předporodnich konzultaci jsou 30. 5. a 21. 6. 2024 . V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com'>e-mailem</a>.`,
-    `V případě zájmu o registraci nám, prosím, napište email na <a href='mailto:pediatrie.litochleby@gmail.com'>pediatrie.litochleby@gmail.com</a> a domluvte si schůzku v ordinaci pro vyplnění a podpis Registračního listu a zadání dalších důležitých údajů.`,
+    `Termín předporodni konzultace je 20. 6. 2024 . V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com' class="underline">e-mailem</a>.`,
   ],
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
