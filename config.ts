@@ -1,7 +1,9 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
+    `V úterý  18. 6. 2024  z  provozních důvodů  budou ordinační hodiny vyjímečně pro nemocné od 10:00 - 14:00. Děkujeme za pochopení`,
     `Termín předporodni konzultace je 20. 6. 2024 . V případě zájmu prosíme termín potvrdit <a href='mailto:pediatrie.litochleby@gmail.com' class="underline">e-mailem</a>.`,
+    `Provoz o letních prázdninách<br><br>V době  1.- 13. 7., 29. 7. - 10. 8. a 19. - 23. 8. čerpáme dovolenou. Provoz ordinace v období zástupu o dovolené je pouze do 13 hodin.<br><br>Ordinace pro nemocné denně pondělí - pátek<br>od 7:30 - 11:00<br><br>Akutně nemocné po 13:00 ošetří na dětském oddělení Thomayerova nemocnice Praha 4 Krč.`,
   ],
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
