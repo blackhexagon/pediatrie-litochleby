@@ -2,7 +2,7 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     `Provoz o letních prázdninách
-<strong class="block my-3 font-black text-primary">Ordinace pro nemocné denně pondělí - pátek<br>od 7:30 - 11:00</strong>V době 29. 7. - 10. 8. a 19. - 23. 8. čerpáme dovolenou. Provoz ordinace v období zástupu o dovolené je pouze do 13 hodin.<br><br>Akutně nemocné po 13:00 ošetří na dětském oddělení Thomayerova nemocnice Praha 4 Krč.`,
+<strong class="block font-black text-amber-800 my-8">Ordinace pro nemocné denně pondělí - pátek<br>od 7:30 - 11:00</strong>V době 29. 7. - 10. 8. a 19. - 23. 8. čerpáme dovolenou. Provoz ordinace v období zástupu o dovolené je pouze do 13 hodin.<br><br>Akutně nemocné po 13:00 ošetří na dětském oddělení Thomayerova nemocnice Praha 4 Krč.`,
   ],
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
