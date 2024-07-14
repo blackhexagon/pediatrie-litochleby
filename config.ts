@@ -10,9 +10,9 @@ export default {
   whatsapp: "https://wa.me/420775073796",
   openingHours: [
     ["Pondělí", "7:30 - 11:00"],
-    ["Úterý", "11:00 -15:00"],
-    ["Středa", "8:00 - 11:00"],
-    ["Čtvrtek", "12:30 - 16:00"],
+    ["Úterý", "7:30 - 11:00"],
+    ["Středa", "7:30 - 11:00"],
+    ["Čtvrtek", "7:30 - 11:00"],
     ["Pátek", "7:30 - 11:00"],
   ],
   controlHours: [
