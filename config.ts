@@ -1,10 +1,7 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
-    `Provoz o letních prázdninách<br><br>
-    <strong class="text-amber-600 underline">Ordinace pro nemocné denně pondělí - pátek<br>od 7:30 - 11:00</strong><br><br>
-    22. - 23. 8. čerpáme dovolenou. Provoz ordinace v období zástupu o dovolené je pouze do 13 hodin. Zásup poskytuje dr. Kohoutová (tel. 272 919 657).<br><br>
-    Akutně nemocné po 13:00 ošetří na dětském oddělení Thomayerova nemocnice Praha 4 Krč.`,
+    `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
   ],
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
@@ -12,9 +9,9 @@ export default {
   whatsapp: "https://wa.me/420775073796",
   openingHours: [
     ["Pondělí", "7:30 - 11:00"],
-    ["Úterý", "7:30 - 11:00"],
-    ["Středa", "7:30 - 11:00"],
-    ["Čtvrtek", "7:30 - 11:00"],
+    ["Úterý", "11:00 - 15:00 (MUDr. Machynková)"],
+    ["Středa", "8:00 - 11:00"],
+    ["Čtvrtek", "12:00 - 15:00"],
     ["Pátek", "7:30 - 11:00"],
   ],
   controlHours: [
@@ -57,7 +54,7 @@ export default {
       title: "Očkování",
       path: "/ockovani",
       description:
-        "Prohlédněte si interaktivní verzi očkovacího kalendáře pro děti – povinné a nepovinné hrazené očkování",
+        "Nabízíme očkování  proti pneumokokům 20 valenční vakcínou Prevenar 20 zdarma pro kojence od 2. měsíce ve schématu 3+1. Prohlédněte si interaktivní verzi očkovacího kalendáře pro děti – povinné a nepovinné hrazené očkování",
     },
     faq: {
       title: "Dotazy",
