@@ -1,6 +1,7 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
+    `Již je dostupná vakcína proti chřipce. Zájemci prosím u sestry.`,
     `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
   ],
   phone: "+420 272 919 633",
