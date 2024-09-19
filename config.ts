@@ -12,7 +12,7 @@ export default {
     ["Pondělí", "7:30 - 11:00"],
     ["Úterý", "11:00 - 15:00 (MUDr. Machynková)"],
     ["Středa", "8:00 - 11:00"],
-    ["Čtvrtek", "12:00 - 15:00"],
+    ["Čtvrtek", "12:30 - 15:00"],
     ["Pátek", "7:30 - 11:00"],
   ],
   controlHours: [
