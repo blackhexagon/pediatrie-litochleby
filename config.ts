@@ -1,6 +1,16 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
+    `Ordinační doba o vánočních svátcích
+    <ul>
+      <li>23. 12. 8:00 - 11:00</li>
+      <li>27. 12. 8:00 - 11:00</li>
+      <li>30. 12. 8:00 - 11:00</li>
+      <li>31. 12. 8:00 - 11:00</li>
+      <li>2. 1.   8:00 - 11:00</li>
+      <li>3. 1.   8:00 - 11:00</li>
+    </ul>
+    Poslední pacient bude ošetřen 30 minut před ukončením ordinační doby.`,
     `Již je dostupná vakcína proti chřipce. Zájemci prosím u sestry.`,
     `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
   ],
