@@ -43,7 +43,8 @@ import Label from "../components/Label.astro";
         <div class="-translate-y-32 -mb-24 shadow-2xl shadow-gray-200 max-w-3xl mx-auto p-12 rounded-3xl bg-white text-center text-purple-950 space-y-6">
           <Label>Aktuality</Label>
           <ul class="divide-y divide-solid">
-            {config.news.map((item) => (
+            {config.news
+            .map(({text: item}) => (
               <li class="py-2 lg:py-6">
                 <article>
                   <Heading size={Size.SM} as="p" set:html={item} />

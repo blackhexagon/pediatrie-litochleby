@@ -1,7 +1,11 @@
 export default {
   title: "Pediatrie Litochleby",
   news: [
-    `Ordinační doba o vánočních svátcích
+    {
+      text: `Ve čtvrtek 19. 12. 2024 se výjimečně nebudou konat předporodní konzultace.`,
+    },
+    {
+      text: `Ordinační doba o vánočních svátcích
     <ul>
       <li>23. 12. 8:00 - 11:00</li>
       <li>27. 12. 8:00 - 11:00</li>
@@ -11,8 +15,11 @@ export default {
       <li>3. 1.   8:00 - 11:00</li>
     </ul>
     Poslední pacient bude ošetřen 30 minut před ukončením ordinační doby.`,
-    `Již je dostupná vakcína proti chřipce. Zájemci prosím u sestry.`,
-    `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
+    },
+    { text: `Již je dostupná vakcína proti chřipce. Zájemci prosím u sestry.` },
+    {
+      text: `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
+    },
   ],
   phone: "+420 272 919 633",
   gsm: "+420 775 073 796",
