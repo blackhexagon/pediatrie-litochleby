@@ -2,9 +2,6 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `Ve čtvrtek 19. 12. 2024 se výjimečně nebudou konat předporodní konzultace.`,
-    },
-    {
       text: `Ordinační doba o vánočních svátcích
     <ul>
       <li>23. 12. 8:00 - 11:00</li>
@@ -14,7 +11,7 @@ export default {
       <li>2. 1.   8:00 - 11:00</li>
       <li>3. 1.   8:00 - 11:00</li>
     </ul>
-    Poslední pacient bude ošetřen 30 minut před ukončením ordinační doby.`,
+27. 12., 31. 12. a 2. 1. Ordinuje MUDr. Machynková. Poslední pacient bude ošetřen 30 minut před ukončením ordinační doby.`,
     },
     { text: `Již je dostupná vakcína proti chřipce. Zájemci prosím u sestry.` },
     {
