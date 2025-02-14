@@ -1,8 +1,13 @@
+import hyperCholesterol from "./src/images/hypercholesterol.jpeg";
+
 export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `Od března 2025 nabízíme screening očních vad přístrojem Plusoptix. Brzy doplníme odkaz pro online objednání.`,
+      text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
+    },
+    {
+      text: `Od 14. dubna 2025 nabízíme screening očních vad přístrojem Plusoptix. Brzy doplníme odkaz pro online objednání.`,
     },
     {
       text: `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
