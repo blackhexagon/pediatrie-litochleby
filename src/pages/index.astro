@@ -34,7 +34,12 @@ import Label from "../components/Label.astro";
       <p class="text-orange-950 leading-loose max-w-lg">
         {config.description}
       </p>
-      <Button href={config.links.contact.path}>Kontaktujte nás</Button>
+      <nav>
+        <Button href={config.links.contact.path}>Kontaktujte nás</Button>
+        <Button href={config.reservationLink} secondary>
+          Rezervace očních vad
+        </Button>
+      </nav>
     </div>
   </section>
   <section class="bg-gray-50 px-12 space-y-12 py-16 md:py-24">
@@ -43,8 +48,7 @@ import Label from "../components/Label.astro";
         <div class="-translate-y-32 -mb-24 shadow-2xl shadow-gray-200 max-w-3xl mx-auto p-12 rounded-3xl bg-white text-center text-purple-950 space-y-6">
           <Label>Aktuality</Label>
           <ul class="divide-y divide-solid">
-            {config.news
-            .map(({text: item}) => (
+            {config.news.map(({ text: item }) => (
               <li class="py-2 lg:py-6">
                 <article>
                   <Heading size={Size.SM} as="p" set:html={item} />

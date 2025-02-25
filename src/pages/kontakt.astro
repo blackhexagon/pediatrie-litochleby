@@ -9,6 +9,7 @@ import waImage from "../images/wa_button.png";
 import config from "../../config";
 import Intro from "../components/Intro.astro";
 import Label from "../components/Label.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout
@@ -64,6 +65,9 @@ import Label from "../components/Label.astro";
         </figure>
       </address>
       <article class="max-w-md space-y-4">
+        <Label as="h3">Online objednání očních vad:</Label>
+        <Button href={config.reservationLink}>Rezervace</Button>
+        <br />
         <Label as="h3">Ordinační hodiny pro nemocné:</Label>
         <ul>
           {
