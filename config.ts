@@ -8,7 +8,7 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: 'Ve čtvrtek 17. 4. se výjimečně nekonají předporodní konzultace.'
+      text: 'V pátek 9. 5. bude ordinační doba pro nemocné 7:30 - 10:00. Děkujeme za pochopení. '
     },
     {
       text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
