@@ -8,7 +8,7 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: 'V pátek 9. 5. bude ordinační doba pro nemocné 7:30 - 10:00. Děkujeme za pochopení. '
+      text: 'Dovolená 22. 5. - 29. 5.<br>zástup ve dnech 23., 28. a 29. MUDr Kohoutová v ordinačních hodinách - ordinace naproti v čekárně. Ve dnech 22.,26. a 27. ordinuje dr. Machýnková.'
     },
     {
       text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
