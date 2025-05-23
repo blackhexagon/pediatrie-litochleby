@@ -16,7 +16,20 @@ import Button from "../components/Button.astro";
   title={config.links.contact.title}
   description={config.links.contact.description}
 >
-  <Intro key={"contact"} />
+  <Intro key={"contact"}>
+    <a
+      class="block"
+      href="https://my.medevio.cz/katerina-rieger-konopaskova?ref=imgbanner"
+      target="_blank"
+      ><img
+        src="https://static.medevio.cz/clinic-banners/banner@2x.png"
+        width="421"
+        height="203"
+        alt="Pokračovat na Medevio"
+        style="max-width:100%;height:auto;"
+      />
+    </a>
+  </Intro>
   <section class="bg-gray-50 py-16">
     <div class="container grid lg:grid-cols-2 h-full gap-8 lg:gap-16">
       <a

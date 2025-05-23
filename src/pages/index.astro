@@ -34,10 +34,21 @@ import Label from "../components/Label.astro";
       <p class="text-orange-950 leading-loose max-w-lg">
         {config.description}
       </p>
-      <nav class="flex flex-wrap gap-3">
+      <nav class="flex flex-wrap gap-y-6 gap-x-3">
         <Button href={config.links.contact.path}>Kontaktujte nás</Button>
         <Button href={config.reservationLink} secondary>
           Rezervace očních vad
+          <a
+            href="https://my.medevio.cz/katerina-rieger-konopaskova?ref=imgbanner"
+            target="_blank"
+            ><img
+              src="https://static.medevio.cz/clinic-banners/banner@2x.png"
+              width="421"
+              height="203"
+              alt="Pokračovat na Medevio"
+              style="max-width:100%;height:auto;"
+            />
+          </a>
         </Button>
       </nav>
     </div>
