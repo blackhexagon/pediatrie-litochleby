@@ -8,13 +8,18 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: 'Dovolená 22. 5. - 29. 5.<br>zástup ve dnech 23., 28. a 29. MUDr Kohoutová v ordinačních hodinách - ordinace naproti v čekárně. Ve dnech 22.,26. a 27. ordinuje dr. Machýnková.'
+      text: `
+        Letní dovolená <br>
+        30. 6. -  11. 7. a 11. 8. - 22. 8. <br>
+        V době dovolené ordinuje MUDr. Kohoutová, čekárna naproti. <br> <br>
+        Ordinační doba o prázdninách pro nemocné<br> po - pá 8-11 hod.
+    `,
     },
     {
       text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
     },
     {
-      text: `Od 14. dubna 2025 nabízíme screening očních vad přístrojem Plusoptix. Objednávat se můžete <a class="underline" href=${reservationLink}>online</a>.`,
+      text: `Od 14. dubna 2025 nabízíme screening očních vad přístrojem Plusoptix. Objednávat se můžete <a class="underline" href=${reservationLink}>online</a>. Vyšetření je hrazeno do 3 let z veřejného pojištění, i pro neregistrované. Pro pacienty nad 3 roky je poplatek za vyšetření 300 Kč.`,
     },
     {
       text: `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,
