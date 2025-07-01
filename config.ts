@@ -11,7 +11,7 @@ export default {
       text: `
         Letní dovolená <br>
         30. 6. -  11. 7. a 11. 8. - 22. 8. <br>
-        V době dovolené ordinuje MUDr. Kohoutová, čekárna naproti. <br> <br>
+        V době dovolené <i>akutní případy</i> řeší MUDr. Kohoutová, čekárna naproti. V případě zaslání receptu prosím o využití aplikace Medevio. <br> <br>
         Ordinační doba o prázdninách pro nemocné<br> po - pá 8-11 hod.
     `,
     },
