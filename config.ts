@@ -29,6 +29,7 @@ export default {
   gsm: "+420 775 073 796",
   email: "pediatrie.litochleby@gmail.com",
   whatsapp: "https://wa.me/420775073796",
+  imstagram: "https://www.instagram.com/pediatrie_litochleby",
   openingHours: [
     ["Pondělí", "7:30 - 11:00"],
     ["Úterý", "11:00 - 15:00 (MUDr. Machynková)"],
