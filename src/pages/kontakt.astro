@@ -57,8 +57,15 @@ import Button from "../components/Button.astro";
         </Heading>
       </a>
       <a
-        href={`${config.whatsapp}`}
+        href={`${config.instagram}`}
         class="flex flex-col gap-2 text-purple-950"
+      >
+        <Label>Instagram:</Label>
+        <Heading size={Size.LG} as="span">@pediatrie_litochleby</Heading>
+      </a>
+      <a
+        href={`${config.whatsapp}`}
+        class="flex flex-col col-span-full gap-2 text-purple-950"
       >
         <Label>Chat:</Label>
         <Image src={waImage} alt="Začít chatovat" class="w-64" />
