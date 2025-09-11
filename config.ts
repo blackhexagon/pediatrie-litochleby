@@ -8,12 +8,7 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `
-        Letní dovolená <br>
-        30. 6. -  18. 7. a 11. 8. - 22. 8. <br>
-        V době dovolené <i>akutní případy</i> řeší MUDr. Kohoutová, čekárna naproti. V případě zaslání receptu prosím o využití aplikace Medevio. <br> <br>
-        Ordinační doba o prázdninách pro nemocné<br> po - pá 8-11 hod.
-    `,
+      text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou.  Očkování proti chřipce dostupné od listopadu. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
     },
     {
       text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,

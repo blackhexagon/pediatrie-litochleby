@@ -9,6 +9,37 @@ import Intro from "../components/Intro.astro";
   description={config.links.vaccination.description}
 >
   <Intro key="vaccination" />
+
+  <!-- RSV Vaccination Section -->
+  <section class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4">
+      <div
+        class="max-w-xl mx-auto p-8 bg-white rounded-lg shadow-lg overflow-hidden space-y-4"
+      >
+        <h2
+          class="text-center text-2xl font-bold text-blue-600 flex items-center"
+        >
+          OCHRANA VAŠEHO DÍTĚTE PŘED RSV BEYFORTUS
+        </h2>
+        <span class="block text-center text-3xl">🛡️</span>
+        <p class="font-semibold text-gray-700">
+          Přípravek Beyfortus je indikován k prevenci onemocnění dolních cest
+          dýchacích respiračním syncytiálním virem (RSV) u novorozenců a
+          kojenců.
+        </p>
+
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h3 class="font-semibold text-blue-800 mb-2">Způsob aplikace:</h3>
+          <p>
+            Očkuje se obvykle jednou dávkou před první RSV sezónou (listopad až
+            březen), při narození dítěte v RSV sezóně pak co nejdříve po
+            narození, intramuskulárně.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-gray-50 py-16 grow">
     <div
       class="container infogram-embed"
