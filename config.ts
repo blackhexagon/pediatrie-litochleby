@@ -7,6 +7,10 @@ export default {
   reservationLink,
   title: "Pediatrie Litochleby",
   news: [
+{text: `
+    Pro zpříjemnění očkování nyní používáme
+    <strong>Mini Buzzy LADYBUZZ „Beruška“ 🐞</strong>,
+    který pomáhá zmírnit bolest a nepříjemné pocity při aplikaci vakcíny.`},
     {
       text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou.  Očkování proti chřipce dostupné od listopadu. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
     },
