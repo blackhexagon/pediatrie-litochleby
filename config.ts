@@ -8,7 +8,7 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou.  Očkování proti chřipce dostupné od listopadu. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
+      text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou. Očkování proti chřipce dostupné od října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
     },
     {
       text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
