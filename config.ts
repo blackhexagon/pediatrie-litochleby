@@ -7,12 +7,17 @@ export default {
   reservationLink,
   title: "Pediatrie Litochleby",
   news: [
-{text: `
+    {
+      text: `Očkování proti chřipce dostupné od 1. října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
+    },
+    {
+      text: `
     Pro zpříjemnění očkování nyní používáme
     <strong>Mini Buzzy LADYBUZZ „Beruška“ 🐞</strong>,
-    který pomáhá zmírnit bolest a nepříjemné pocity při aplikaci vakcíny.`},
+    který pomáhá zmírnit bolest a nepříjemné pocity při aplikaci vakcíny.`,
+    },
     {
-      text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou. Očkování proti chřipce dostupné od října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
+      text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou.`,
     },
     {
       text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
