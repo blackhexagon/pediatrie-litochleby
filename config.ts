@@ -8,6 +8,20 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
+      text: `Ordinační doba o vánočních svátcích<br>
+      22.12. 2025 8-11 hodin<br>
+      23.12. 2025 8-11 hodin<br>
+      27.12. 2025 8-11 hodin<br>
+      30.12. 2025 8-11 hodin<br>
+      31.12. 2025 neordinujeme<br>
+      <small>v akutních případech zástup MUDr. Kohoutová</small><br>
+      2. 1. 2026 8-11 hodin<br><br>
+      Poslední pacient bude ošetřen 30 min před ukončením ordinační doby.`,
+    },
+    {
+      text: `29. 11. 2025 ordinujeme pro nemocné od 9 hodin.`,
+    },
+    {
       text: `Očkování proti chřipce dostupné od 1. října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
     },
     {
