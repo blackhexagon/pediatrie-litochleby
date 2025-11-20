@@ -19,7 +19,7 @@ export default {
       Poslední pacient bude ošetřen 30 min před ukončením ordinační doby.`,
     },
     {
-      text: `29. 11. 2025 ordinujeme pro nemocné od 9 hodin.`,
+      text: `28. 11. 2025 ordinujeme pro nemocné od 9 hodin.`,
     },
     {
       text: `Očkování proti chřipce dostupné od 1. října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
