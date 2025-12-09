@@ -11,7 +11,7 @@ export default {
       text: `Ordinační doba o vánočních svátcích<br>
       22.12. 2025 8-11 hodin<br>
       23.12. 2025 8-11 hodin<br>
-      27.12. 2025 8-11 hodin<br>
+      29.12. 2025 8-11 hodin<br>
       30.12. 2025 8-11 hodin<br>
       31.12. 2025 neordinujeme<br>
       <small>v akutních případech zástup MUDr. Kohoutová</small><br>
