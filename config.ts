@@ -7,6 +7,8 @@ export default {
   reservationLink,
   title: "Pediatrie Litochleby",
   news: [
+    { text: `18. 12 a 19. 12. má Dr Konopaskova dovolenou, zastupovat bude 18. 12. Dr machynková v normální ordinační době pro nemocné, a 19. 12. bude ordinace zavřená, akutní případy ošetří Dr Kohoutová (ordinace naproti).`
+    },
     {
       text: `Ordinační doba o vánočních svátcích<br>
       22.12. 2025 8-11 hodin<br>
