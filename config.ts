@@ -52,7 +52,7 @@ export default {
   instagram: "https://www.instagram.com/pediatrie_litochleby",
   openingHours: [
     ["Pondělí", "7:30 - 11:00"],
-    ["Úterý", "11:00 - 15:00 (MUDr. Machynková)"],
+    ["Úterý", "11:00 - 15:00 (MUDr. Naděžda Tošovská)"],
     ["Středa", "8:00 - 11:00"],
     ["Čtvrtek", "12:30 - 15:00"],
     ["Pátek", "7:30 - 11:00"],
@@ -65,11 +65,11 @@ export default {
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
     Konopáskové nacházející se na poliklinice Litochleby na pražském Chodově.
-    Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech
-    MUDr. Marcelou Machynkovou. Praxi nyní převzala atestovaná lékařka s
-    dlouholetouetou praxí v ambulantní a nemocniční pediatrii MUDr. Kateřina
-    Rieger Konopásková. Nabízíme komplexní péči o pacienty od narození až do
-    dospělosti.
+    Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech.
+    Praxi nyní vede atestovaná lékařka s dlouholetou praxí v ambulantní a
+    nemocniční pediatrii MUDr. Kateřina Rieger Konopásková. Od 2. ledna 2026
+    v ordinaci působí MUDr. Naděžda Tošovská. Nabízíme komplexní péči o pacienty
+    od narození až do dospělosti.
   `,
   links: {
     team: {
