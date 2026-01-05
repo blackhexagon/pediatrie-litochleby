@@ -7,22 +7,6 @@ export default {
   reservationLink,
   title: "Pediatrie Litochleby",
   news: [
-    { text: `18. 12 a 19. 12. má Dr Konopaskova dovolenou, zastupovat bude 18. 12. Dr machynková v normální ordinační době pro nemocné, a 19. 12. bude ordinace zavřená, akutní případy ošetří Dr Kohoutová (ordinace naproti).`
-    },
-    {
-      text: `Ordinační doba o vánočních svátcích<br>
-      22.12. 2025 8-11 hodin<br>
-      23.12. 2025 8-11 hodin<br>
-      29.12. 2025 8-11 hodin<br>
-      30.12. 2025 8-11 hodin<br>
-      31.12. 2025 neordinujeme<br>
-      <small>v akutních případech zástup MUDr. Kohoutová</small><br>
-      2. 1. 2026 8-11 hodin<br><br>
-      Poslední pacient bude ošetřen 30 min před ukončením ordinační doby.`,
-    },
-    {
-      text: `28. 11. 2025 ordinujeme pro nemocné od 9 hodin.`,
-    },
     {
       text: `Očkování proti chřipce dostupné od 1. října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
     },
@@ -52,7 +36,7 @@ export default {
   instagram: "https://www.instagram.com/pediatrie_litochleby",
   openingHours: [
     ["Pondělí", "7:30 - 11:00"],
-    ["Úterý", "11:00 - 15:00 (MUDr. Machynková)"],
+    ["Úterý", "11:00 - 15:00 (MUDr. Naděje Tošovská)"],
     ["Středa", "8:00 - 11:00"],
     ["Čtvrtek", "12:30 - 15:00"],
     ["Pátek", "7:30 - 11:00"],
@@ -65,11 +49,11 @@ export default {
   description: `
     Vítáme vás na stránkách Pediatrie Litochleby MUDr. Kateřiny Rieger
     Konopáskové nacházející se na poliklinice Litochleby na pražském Chodově.
-    Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech
-    MUDr. Marcelou Machynkovou. Praxi nyní převzala atestovaná lékařka s
-    dlouholetouetou praxí v ambulantní a nemocniční pediatrii MUDr. Kateřina
-    Rieger Konopásková. Nabízíme komplexní péči o pacienty od narození až do
-    dospělosti.
+    Jsme ordinace s dlouhodobou praxí, která byla založena v devadesátých letech.
+    Praxi nyní vede atestovaná lékařka s dlouholetou praxí v ambulantní a
+    nemocniční pediatrii MUDr. Kateřina Rieger Konopásková. Od 2. ledna 2026
+    v ordinaci působí MUDr. Naděje Tošovská. Nabízíme komplexní péči o pacienty
+    od narození až do dospělosti.
   `,
   links: {
     team: {
