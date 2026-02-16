@@ -8,6 +8,9 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
+      text: `Dovolená 23.–25. 2. 2026. Akutní případy ošetří MUDr. Naděje Tošovská v ordinačních hodinách.`,
+    },
+    {
       text: `Očkování proti chřipce dostupné od 1. října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
     },
     {
