@@ -58,6 +58,11 @@ export default {
     v ordinaci působí MUDr. Naděje Tošovská. Nabízíme komplexní péči o pacienty
     od narození až do dospělosti.
   `,
+  gdpr: {
+    title: "GDPR",
+    path: "/gdpr",
+    description: "Informace pro pacienty o zpracování osobních údajů",
+  },
   links: {
     team: {
       title: "Náš tým",
