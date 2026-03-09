@@ -8,7 +8,7 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `Dovolená 23.–25. 2. 2026. Akutní případy ošetří MUDr. Naděje Tošovská v ordinačních hodinách.`,
+      text: `Ve středu 11. 3. ordinujeme jen nemocné. Děkujeme za pochopení.`,
     },
     {
       text: `Možnost bezjehlové aplikace. Možné pro subkutánní i intramuskulární očkování bez použití jehly. Dostupné v naší ordinaci od 1. 3. 2026. Poplatek 350 Kč za aplikaci.`,
