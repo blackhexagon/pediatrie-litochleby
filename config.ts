@@ -1,5 +1,3 @@
-import hyperCholesterol from "./src/images/hypercholesterol.jpeg";
-
 const reservationLink =
   "https://pediatrie-litochleby.reservio.com/services/343b0b08-7387-43dd-abdd-fda08bc653e3";
 
@@ -8,28 +6,10 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `Ve středu 11. 3. ordinujeme jen pro nemocné. Děkujeme za pochopení.`,
-    },
-    {
       text: `Možnost bezjehlové aplikace. Možné pro subkutánní i intramuskulární očkování bez použití jehly. Dostupné v naší ordinaci od 1. 3. 2026. Poplatek 350 Kč za aplikaci.`,
     },
     {
-      text: `Očkování proti chřipce dostupné od 1. října. Více informací na stránce <a href="/ockovani" class="underline">očkování</a>.`,
-    },
-    {
-      text: `
-    Pro zpříjemnění očkování nyní používáme
-    <strong>Mini Buzzy LADYBUZZ „Beruška“ 🐞</strong>,
-    který pomáhá zmírnit bolest a nepříjemné pocity při aplikaci vakcíny.`,
-    },
-    {
       text: `Od října 2025 bude dostupné pro kojence narozené od 4/2025 očkování RSV monoklonální protilátkou.`,
-    },
-    {
-      text: `Nově možnost vyšetření lipidového spektra z kapky krve v rámci celorepublikové studie záchytu familiární hypercholesterolemie (viz <a class="underline" href="${hyperCholesterol.src}">obrázek</a>) pro 3-7 leté děti. Pro ostatní v rámci nadstandardu za poplatek.`,
-    },
-    {
-      text: `Od 14. dubna 2025 nabízíme screening očních vad přístrojem Plusoptix. Objednávat se můžete <a class="underline" href=${reservationLink}>online</a>. Vyšetření je hrazeno do 3 let z veřejného pojištění, i pro neregistrované. Pro pacienty nad 3 roky je poplatek za vyšetření 300 Kč.`,
     },
     {
       text: `Termíny na předporodní konzultace: vždy 3. čtvrtek v měsíci od 8 hodiny.`,

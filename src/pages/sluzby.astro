@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Heading from "../components/Heading.astro";
 import config from "../../config";
 import Intro from "../components/Intro.astro";
+import hyperCholesterol from "../images/hypercholesterol.jpeg";
 ---
 
 <Layout
@@ -46,7 +47,12 @@ import Intro from "../components/Intro.astro";
           </li>
           <li>
             Vyšetření lipidového spektra z kapky krve v rámci celorepublikové
-            studie záchytu <strong>familiární hypercholesterolemie</strong>
+            studie záchytu <strong>familiární hypercholesterolemie</strong> pro
+            děti ve věku 3–7 let (viz
+            <a class="underline text-purple-700" href={hyperCholesterol.src}
+              >obrázek</a
+            >). Pro ostatní pacienty je vyšetření dostupné v rámci nadstandardu
+            za poplatek.
           </li>
         </ul>
         <p>Další služby:</p>
