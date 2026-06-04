@@ -6,6 +6,9 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
+      text: `<strong>Prázdninový provoz:</strong><br> Po–Pá 8:00–11:00 pro nemocné. <br>Dovolená 30. 6. – 17. 7. a 10. – 14. 8., zastupuje MUDr. Kohoutová zde v čekárně.`,
+    },
+    {
       text: `Možnost bezjehlové aplikace. Možné pro subkutánní i intramuskulární očkování bez použití jehly. Dostupné v naší ordinaci od 1. 3. 2026. Poplatek 350 Kč za aplikaci.`,
     },
     {
