@@ -6,6 +6,9 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
+      text: `Prosíme rodiče o včasné zajištění potřebných potvrzení na tábory. V době dovolených je provoz omezen. Děkujeme za pochopení.`,
+    },
+    {
       text: `<strong>Prázdninový provoz:</strong><br> Po–Pá 8:00–11:00 pro nemocné. <br>Dovolená 30. 6. – 17. 7. a 10. – 14. 8., zastupuje MUDr. Kohoutová zde v čekárně.`,
     },
     {
