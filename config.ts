@@ -6,10 +6,10 @@ export default {
   title: "Pediatrie Litochleby",
   news: [
     {
-      text: `Prosíme rodiče o včasné zajištění potřebných potvrzení na tábory. V době dovolených je provoz omezen. Děkujeme za pochopení.`,
+      text: `<strong>V době letních prázdnin ordinační doba PRO NEMOCNÉ 8–11 hod.</strong><br><br>V termínu <strong>30. 6. – 18. 7.</strong> a <strong>10. 8. – 14. 8.</strong> čerpá dovolenou ordinace MUDr. Konopáskové. Zastupuje MUDr. Kohoutová, čekárna naproti. Tel. 272 919 657.<br><br>V termínu <strong>20. 7. – 9. 8.</strong> a <strong>17. 8. – 21. 8.</strong> čerpá dovolenou ordinace MUDr. Kohoutové. Zastupuje MUDr. Konopásková, čekárna naproti. Tel. 272 919 633.<br><br>Poslední pacient bude ošetřen 30 min před koncem ordinační doby.`,
     },
     {
-      text: `<strong>Prázdninový provoz:</strong><br> Po–Pá 8:00–11:00 pro nemocné. <br>Dovolená 30. 6. – 17. 7. a 10. – 14. 8., zastupuje MUDr. Kohoutová zde v čekárně.`,
+      text: `Prosíme rodiče o včasné zajištění potřebných potvrzení na tábory. V době dovolených je provoz omezen. Děkujeme za pochopení.`,
     },
     {
       text: `Možnost bezjehlové aplikace. Možné pro subkutánní i intramuskulární očkování bez použití jehly. Dostupné v naší ordinaci od 1. 3. 2026. Poplatek 350 Kč za aplikaci.`,
